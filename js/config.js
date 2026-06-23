@@ -88,9 +88,9 @@ window.PORTFOLIO_DATA = {
   // }
   projects: [
    {
-    title: "Project Name",
-    description: "One or two sentences on what it does and why it exists.",
-    stack: ["Python", "PyTorch", "Logistic Regression", "KNN"],
+    title: "CardioSense",
+    description: "The objective of this laboratory project is to construct a robust machine learning diagnostic framework. By analyzing critical physiological parameters, this project builds and validates two distinct classification pipelines: a generalized linear framework (Logistic Regression) and a distance-based instance framework (K-Nearest Neighbors). ",
+    stack: ["Python", "Logistic Regression", "K-Nearest Neighbors"],
     link: "https://github.com/theTerminatorrr/Heart-Disease-Detection-"
   }
 ],
