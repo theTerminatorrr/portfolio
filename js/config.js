@@ -65,13 +65,13 @@ window.PORTFOLIO_DATA = {
     },
     {
       degree: "Higher Secondary Certificate (HSC), Science",
-      institute: "Principal Kazi Faruky College",
+      institute: "Principal Kazi Faruky School & College",
       detail: "Completed 2022",
       current: false
     },
     {
       degree: "Secondary School Certificate (SSC), Science",
-      institute: "Principal Kazi Faruky College",
+      institute: "Principal Kazi Faruky School & College",
       detail: "Completed 2020",
       current: false
     }
@@ -86,7 +86,14 @@ window.PORTFOLIO_DATA = {
   //   stack: ["Python", "PyTorch", "OpenCV"],
   //   link: "https://github.com/theTerminatorrr/your-repo"
   // }
-  projects: [],
+  projects: [
+   {
+    title: "Project Name",
+    description: "One or two sentences on what it does and why it exists.",
+    stack: ["Python", "PyTorch", "OpenCV"],
+    link: "https://github.com/theTerminatorrr/your-repo"
+  }
+],
 
   // ---- Contact & socials --------------------------------------------------------
   email: "jahiduljony0060@gmail.com",
