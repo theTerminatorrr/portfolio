@@ -20,7 +20,7 @@ window.PORTFOLIO_DATA = {
   avatar: "assets/IMG_2024.HEIC",
   // ---- Hero -------------------------------------------------------
   tagline:
-    "Undergraduate CSE student, building a foundation across machine learning, computer vision, NLP, and multimodal systems — one project at a time.",
+    "Undergraduate CSE student, building a foundation across machine learning, computer vision, NLP, and multimodal systems.",
 
   // ---- About --------------------------------------------------------
   about: [
