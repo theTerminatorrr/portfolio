@@ -17,11 +17,10 @@ window.PORTFOLIO_DATA = {
 
   // Path to your photo. Drop a new image into /assets and change
   // this path. Square images (e.g. 600x600) work best.
-  avatar: "assets/avatar-placeholder.svg",
-
+  avatar: "assets/assets\1693588496298.jpg",
   // ---- Hero -------------------------------------------------------
   tagline:
-    "Undergraduate CSE student building a foundation across machine learning, computer vision, NLP, and multimodal systems — one project at a time.",
+    "Undergraduate CSE student, building a foundation across machine learning, computer vision, NLP, and multimodal systems — one project at a time.",
 
   // ---- About --------------------------------------------------------
   about: [
@@ -58,7 +57,7 @@ window.PORTFOLIO_DATA = {
   // Ordered newest first. `current: true` adds an "in progress" badge.
   education: [
     {
-      degree: "BSc in Computer Science & Engineering (CSE)",
+      degree: "B.Sc. in Computer Science & Engineering (CSE)",
       institute: "United International University (UIU)",
       detail: "Sep 2023 – Expected Jun 2028",
       current: true
