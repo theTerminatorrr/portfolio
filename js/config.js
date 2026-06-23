@@ -17,10 +17,10 @@ window.PORTFOLIO_DATA = {
 
   // Path to your photo. Drop a new image into /assets and change
   // this path. Square images (e.g. 600x600) work best.
-  avatar: "assets/IMG_2024.HEIC",
+  avatar: "assets/rsz_img_6261.png",
   // ---- Hero -------------------------------------------------------
   tagline:
-    "Undergraduate CSE student, building a foundation across machine learning, computer vision, NLP, and multimodal systems.",
+    "Undergraduate CSE student, building a foundation across Machine Learning, Computer Vision, Natural Language Processing, and multimodal systems.",
 
   // ---- About --------------------------------------------------------
   about: [
