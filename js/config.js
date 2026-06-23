@@ -12,7 +12,7 @@ window.PORTFOLIO_DATA = {
   // ---- Identity -------------------------------------------------
   name: "Jahidul Islam Jony",
   role: "Computer Science & Engineering Undergraduate",
-  focus: "Machine Learning · Computer Vision · NLP",
+  focus: "Machine Learning · Computer Vision · Natural Language Processing",
   location: "Dhaka, Bangladesh",
 
   // Path to your photo. Drop a new image into /assets and change
