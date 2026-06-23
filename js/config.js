@@ -17,7 +17,8 @@ window.PORTFOLIO_DATA = {
 
   // Path to your photo. Drop a new image into /assets and change
   // this path. Square images (e.g. 600x600) work best.
-  avatar: "assets/rsz_img_6261.png",
+  //avatar: "assets/rsz_img_6261.png",
+  avatar : "assets/IMG_6261.jpg",
   // ---- Hero -------------------------------------------------------
   tagline:
     "Undergraduate CSE student, building a foundation across Machine Learning, Computer Vision, Natural Language Processing, and multimodal systems.",
