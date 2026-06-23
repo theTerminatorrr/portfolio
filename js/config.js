@@ -90,14 +90,14 @@ window.PORTFOLIO_DATA = {
    {
     title: "Project Name",
     description: "One or two sentences on what it does and why it exists.",
-    stack: ["Python", "PyTorch", "OpenCV"],
-    link: "https://github.com/theTerminatorrr/your-repo"
+    stack: ["Python", "PyTorch", "Logistic Regression", "KNN"],
+    link: "https://github.com/theTerminatorrr/Heart-Disease-Detection-"
   }
 ],
 
   // ---- Contact & socials --------------------------------------------------------
   email: "jahiduljony0060@gmail.com",
-  socials: {
+  socials: { 
     github: "https://github.com/theTerminatorrr",
     linkedin: "https://www.linkedin.com/in/terminator-t60/",
     facebook: "https://www.facebook.com/Jony.terminator",
