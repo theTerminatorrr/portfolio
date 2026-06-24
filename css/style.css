@@ -256,14 +256,12 @@ main { position: relative; z-index: 1; }
   max-width: 760px;
   text-align: center;
 }
-
 .hero__name {
-  font-size: clamp(3.2rem, 7vw, 4.7rem);
-  margin: 15px 0 20px;
+  font-size: clamp(2.5rem, 7vw, 4.3rem);
+  margin: 10px 0 14px;
   color: var(--text-primary);
   font-family: "Courier New", Courier, monospace;
 }
-
 .hero__focus {
   font-family: var(--font-mono);
   font-size: clamp(0.9rem, 1.6vw, 1.05rem);
