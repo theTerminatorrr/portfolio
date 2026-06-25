@@ -12,7 +12,7 @@ window.PORTFOLIO_DATA = {
   // ---- Identity -------------------------------------------------
   name: "Jahidul Islam Jony",
   role: "Computer Science & Engineering Undergraduate",
-  focus: "Machine Learning · Computer Vision · Natural Language Processing",
+  focus: "Machine Learning · Natural Language Processing · Computer Vision ",
   location: "Dhaka, Bangladesh",
 
   // Path to your photo. Drop a new image into /assets and change
@@ -54,32 +54,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
 
-  // ---- Education --------------------------------------------------------
-  // Ordered newest first. `current: true` adds an "in progress" badge.
-  education: [
-    {
-      degree: "B.Sc. in Computer Science & Engineering (CSE)",
-      institute: "United International University (UIU)",
-      detail: "Sep 2023 – Expected Jun 2028",
-      current: true
-    },
-    {
-      degree: "Higher Secondary Certificate (HSC), Science",
-      institute: "Principal Kazi Faruky School & College",
-      detail: "Completed 2022",
-      current: false
-    },
-    {
-      degree: "Secondary School Certificate (SSC), Science",
-      institute: "Principal Kazi Faruky School & College",
-      detail: "Completed 2020",
-      current: false
-    }
-  ],
-
   // ---- Projects --------------------------------------------------------
-  // Leave this array empty to show the "coming soon" state.
-  // To add a real project, push an object like:
   // {
   //   title: "Project Name",
   //   description: "One or two sentences on what it does and why it exists.",
@@ -89,14 +64,39 @@ window.PORTFOLIO_DATA = {
   projects: [
    {
     title: "CardioSense",
-    description: "The objective of this laboratory project is to construct a robust machine learning diagnostic framework. By analyzing critical physiological parameters, this project builds and validates two distinct classification pipelines: a generalized linear framework (Logistic Regression) and a distance-based instance framework (K-Nearest Neighbors). ",
+    description: "Every heartbeat carries a pattern. I trained a model to read it. This model is an interactive logistic regression classifier to estimate cardiac risk.",
     stack: ["Python", "Logistic Regression", "K-Nearest Neighbors"],
     link: "https://github.com/theTerminatorrr/Heart-Disease-Detection-"
   }
 ],
 
+  // ---- Education --------------------------------------------------------
+  // Ordered newest first. `current: true` adds an "in progress" badge.
+  education: [
+    {
+      degree: "B.Sc. in Computer Science & Engineering (CSE)",
+      institute: "United International University (UIU)",
+      detail: "Sep 2023 – Expected Jun 2028",
+      current: true
+    },
+
+    {
+      degree: "Higher Secondary Certificate (HSC), Science",
+      institute: "Principal Kazi Faruky School & College",
+      detail: "Completed 2022",
+      current: false
+    },
+
+    {
+      degree: "Secondary School Certificate (SSC), Science",
+      institute: "Principal Kazi Faruky School & College",
+      detail: "Completed 2020",
+      current: false
+    }
+  ],
+
   // ---- Contact & socials --------------------------------------------------------
-  email: "jahiduljony0060@gmail.com",
+  email: "jahiduljony60@gmail.com",
   socials: { 
     github: "https://github.com/theTerminatorrr",
     linkedin: "https://www.linkedin.com/in/terminator-t60/",
