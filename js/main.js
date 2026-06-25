@@ -40,10 +40,21 @@
       <div class="skills__group reveal">
         <p class="skills__group-title">${escapeHTML(group.group)}</p>
         <div class="skills__tags">
-          ${group.items.map(item => `<span class="tag">${escapeHTML(item)}</span>`).join("")}
-        </div>
+        ${group.items.map(item => {
+          const isObj = typeof item === "object";
+          const name = isObj ? item.name : item;
+          let iconHtml = "";
+          if (isObj && item.icon === "emoji") {
+          iconHtml = `<span class="tag__emoji">${item.emoji}</span>`;
+          } 
+          else if (isObj && item.icon){
+        iconHtml = `<i class="${escapeHTML(item.icon)} tag__icon"></i>`;
+        }
+        return `<span class="tag">${iconHtml}${escapeHTML(name)}</span>`;
+      }).join("")}          
       </div>
-    `).join("");
+    </div>
+  `).join("");
   }
 
   function renderEducation() {

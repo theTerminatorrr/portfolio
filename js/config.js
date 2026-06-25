@@ -33,27 +33,34 @@ window.PORTFOLIO_DATA = {
   // ---- Skills ---------------------------------------------------------
   // Add, remove, or rename groups freely. Each group renders as its
   // own cluster of tags.
-  skills: [
-    {
-      group: "Languages",
-      items: ["Python", "Java", "C++", "C"]
-    },
-    {
-      group: "AI / ML Focus",
-      items: [
-        "Machine Learning",
-        "Natural Language Processing",
-        "Digital Image Processing",
-        "Computer Vision",
-        "Multimodal Machine Learning"
-      ]
-    },
-    {
-      group: "Currently Exploring",
-      items: ["Cloud Computing", "Applied AI Engineering"]
-    }
-  ],
-
+skills: [
+  {
+    group: "Languages",
+    items: [
+      { name: "Python",  icon: "devicon-python-plain colored" },
+      { name: "Java",    icon: "devicon-java-plain colored" },
+      { name: "C++",     icon: "devicon-cplusplus-plain colored" },
+      { name: "C",       icon: "devicon-c-plain colored" }
+    ]
+  },
+  {
+    group: "AI / ML Focus",
+    items: [
+      { name: "Machine Learning",           icon: "emoji", emoji: "🤖" },
+      { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+      { name: "Digital Image Processing",   icon: "emoji", emoji: "🖼️" },
+      { name: "Computer Vision",            icon: "devicon-opencv-plain colored" },
+      { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" }
+    ]
+  },
+  {
+    group: "Currently Exploring",
+    items: [
+      { name: "Cloud Computing",       icon: "emoji", emoji: "☁️" },
+      { name: "Applied AI Engineering", icon: "emoji", emoji: "⚙️" }
+    ]
+  }
+],
   // ---- Projects --------------------------------------------------------
   // {
   //   title: "Project Name",
