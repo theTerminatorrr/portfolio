@@ -73,7 +73,7 @@ skills: [
     title: "CardioSense",
     description: "Every heartbeat carries a pattern. I trained a model to read it. This model is an interactive logistic regression classifier to estimate cardiac risk.",
     stack: ["Python", "Logistic Regression", "K-Nearest Neighbors"],
-    link: "https://github.com/theTerminatorrr/Heart-Disease-Detection-"
+    link: "https://theterminatorrr.github.io/Heart-Disease-Detection-/"
   }
 ],
 
