@@ -40,7 +40,10 @@ skills: [
       { name: "Python",  icon: "devicon-python-plain colored" },
       { name: "Java",    icon: "devicon-java-plain colored" },
       { name: "C++",     icon: "devicon-cplusplus-plain colored" },
-      { name: "C",       icon: "devicon-c-plain colored" }
+      { name: "C",       icon: "devicon-c-plain colored" },
+      { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+      { name: "HTML",    icon: "devicon-html5-plain colored" },
+      { name: "CSS",     icon: "devicon-css3-plain colored" }
     ]
   },
   {
