@@ -257,10 +257,18 @@ main { position: relative; z-index: 1; }
   text-align: center;
 }
 .hero__name {
-  font-size: clamp(2.5rem, 7vw, 4.3rem);
+  font-size: clamp(2.6rem, 7vw, 4.6rem);
   margin: 10px 0 14px;
-  color: var(--text-primary);
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(
+    90deg,
+    #4c84e4 0%,     /* darker teal */
+    #00d4ff 100%   /* lighter cyan */
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .hero__focus {
   font-family: var(--font-mono);
