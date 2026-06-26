@@ -11,7 +11,7 @@ window.PORTFOLIO_DATA = {
 
   // ---- Identity -------------------------------------------------
   name: "Jahidul Islam Jony",
-  role: "Computer Science & Engineering Undergraduate",
+  role: " CS Undergrad || ML & AI Enthusiast",
   focus: "Machine Learning · Natural Language Processing · Computer Vision ",
   location: "Dhaka, Bangladesh",
 
