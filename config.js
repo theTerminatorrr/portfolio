@@ -26,7 +26,7 @@ window.PORTFOLIO_DATA = {
   avatar: "assets/Jony.jpg",
 
   // Path to resume/CV PDF. Leave "" to hide the download button.
-  resume: "",
+  resume: "assets/Jony_Resume.pdf",
 
   // Public email shown in Contact + used for the mailto fallback.
   email: "jahiduljony60@gmail.com",
@@ -34,10 +34,11 @@ window.PORTFOLIO_DATA = {
   /* ---------------- SOCIAL LINKS ----------------
      Leave any value "" and that icon disappears automatically. */
   socials: {
-    github: "https://github.com/theTerminatorrr",
     linkedin: "https://www.linkedin.com/in/terminator-t60/",
-    facebook: "https://www.facebook.com/Jony.terminator",
     instagram: "https://www.instagram.com/__.the_terminator.__",
+    facebook: "https://www.facebook.com/Jony.terminator",
+    github: "https://github.com/theTerminatorrr",
+    whatsapp: "https://wa.me/8801308755671",
     scholar: "",
     orcid: ""
   },
@@ -47,7 +48,7 @@ window.PORTFOLIO_DATA = {
      sign up for a free form backend (e.g. Formspree, Web3Forms)
      and paste the endpoint URL below. Until then, the form falls
      back to opening the visitor's email client (mailto). */
-  contactEndpoint: "",
+  contactEndpoint: "https://formspree.io/f/moeadply",
 
   /* ---------------- ABOUT ---------------- */
   about: [
@@ -59,79 +60,79 @@ window.PORTFOLIO_DATA = {
   ],
 
   /* ---------------- SKILLS ---------------- */skills: [
-  {
-    group: "Programming Languages",
-    items: [
-      { name: "Python",  icon: "devicon-python-plain colored" },
-      { name: "Java",    icon: "devicon-java-plain colored" },
-      { name: "C++",     icon: "devicon-cplusplus-plain colored" },
-      { name: "C",       icon: "devicon-c-plain colored" },
-      { name: "HTML",    icon: "devicon-html5-plain colored" },
-      { name: "CSS",     icon: "devicon-css3-plain colored" },
-      { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-      /* { name: "TypeScript",   icon: "devicon-typescript-plain colored" },
-      { name: "SQL",     icon: "devicon-mysql-plain colored" },
-      { name: "Rust",    icon: "devicon-rust-plain colored" }, */
-    ]
-  },
-  
-  {
-    group: "Frontend",
-    items: [
-      { name: "React",      icon: "devicon-react-original colored" },
-      { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
-    ]
-  },
-  
-  {
-    group: "Backend",
-    items: [
-      { name: "Node.js",    icon: "devicon-nodejs-plain colored" },
-      /* { name: "Express.js", icon: "devicon-express-original colored" },
-      { name: "Django",     icon: "devicon-django-plain colored" }, */
-    ]
-  },
+    {
+      group: "Programming Languages",
+      items: [
+        { name: "Python", icon: "devicon-python-plain colored" },
+        { name: "Java", icon: "devicon-java-plain colored" },
+        { name: "C++", icon: "devicon-cplusplus-plain colored" },
+        { name: "C", icon: "devicon-c-plain colored" },
+        { name: "HTML", icon: "devicon-html5-plain colored" },
+        { name: "CSS", icon: "devicon-css3-plain colored" },
+        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+        /* { name: "TypeScript",   icon: "devicon-typescript-plain colored" },
+        { name: "SQL",     icon: "devicon-mysql-plain colored" },
+        { name: "Rust",    icon: "devicon-rust-plain colored" }, */
+      ]
+    },
+
+    {
+      group: "Frontend",
+      items: [
+        { name: "React", icon: "devicon-react-original colored" },
+        { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
+      ]
+    },
+
+    {
+      group: "Backend",
+      items: [
+        { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+        /* { name: "Express.js", icon: "devicon-express-original colored" },
+        { name: "Django",     icon: "devicon-django-plain colored" }, */
+      ]
+    },
 
 
-  {
-    group: "Tools",
-    items: [
-      { name: "Git",        icon: "devicon-git-plain colored" },
-      { name: "Figma",     icon: "devicon-figma-plain colored" },
-      { name: "VS Code",    icon: "devicon-vscode-plain colored" },
-      { name: "Jupyter",    icon: "devicon-jupyter-plain colored" },
-      { name: "PyCharm",    icon: "devicon-pycharm-plain colored" },
-    ]
-  },
+    {
+      group: "Tools",
+      items: [
+        { name: "Git", icon: "devicon-git-plain colored" },
+        { name: "Figma", icon: "devicon-figma-plain colored" },
+        { name: "VS Code", icon: "devicon-vscode-plain colored" },
+        { name: "Jupyter", icon: "devicon-jupyter-plain colored" },
+        { name: "PyCharm", icon: "devicon-pycharm-plain colored" },
+      ]
+    },
 
-  {
-    group: "AI / ML Focus",
-    items: [
-      { name: "Machine Learning",           icon: "emoji", emoji: "🤖" },
-      { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
-      { name: "Digital Image Processing",   icon: "emoji", emoji: "🖼️" },
-      { name: "Computer Vision",            icon:  "emoji", emoji: "🔎" },
-    ]
-  },
-  {
-    group: "Currently Exploring",
-    items: [
-      { name: "Cloud Computing",       icon: "emoji", emoji: "☁️" },
-      { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
-      { name: "Applied AI Engineering", icon: "emoji", emoji: "⚙️" }
-    ]
-  }
-],
+    {
+      group: "AI / ML Focus",
+      items: [
+        { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
+        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+        { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
+        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
+      ]
+    },
+    {
+      group: "Currently Exploring",
+      items: [
+        { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
+        { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
+        { name: "Applied AI Engineering", icon: "emoji", emoji: "⚙️" }
+      ]
+    }
+  ],
 
 
- 
+
   /* ---------------- EXPERIENCE ----------------
      Empty on purpose — add entries as they happen. Each item:
      { role, org, period, description, current } */
   experience: [
-    
+
   ],
- 
+
   /* ---------------- PROJECTS ----------------
      Empty on purpose. Each item:
      { title, description, image, stack: [], github, link, category, featured } */
@@ -148,7 +149,7 @@ window.PORTFOLIO_DATA = {
       featured: true
     }
   ],
- 
+
 
   /* ---------------- RESEARCH ----------------
      Research interests are real; publications are intentionally
@@ -166,8 +167,8 @@ window.PORTFOLIO_DATA = {
 
 
   ],
- 
- 
+
+
   /* ---------------- EDUCATION ---------------- */
   education: [
     {
@@ -191,9 +192,8 @@ window.PORTFOLIO_DATA = {
       current: false
     }
   ],
- 
+
   /* ---------------- ACHIEVEMENTS ----------------
      Empty on purpose — awards, hackathons, certificates go here. */
   achievements: []
 };
- 
