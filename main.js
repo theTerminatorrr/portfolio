@@ -198,8 +198,8 @@
             : ""
           }
           <div class="project-card__links">
-            ${p.github ? `<a href="${escapeAttr(p.github)}" target="_blank" rel="noopener">Code ↗</a>` : ""}
-            ${p.link ? `<a href="${escapeAttr(p.link)}" target="_blank" rel="noopener">Live ↗</a>` : ""}
+            ${p.github ? `<a href="${escapeAttr(p.github)}" target="_blank" rel="noopener">Code on GitHub ↗</a>` : ""}
+            ${p.link ? `<a href="${escapeAttr(p.link)}" target="_blank" rel="noopener">Live Server ↗</a>` : ""}
           </div>
         </div>
       </article>`

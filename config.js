@@ -138,16 +138,28 @@ window.PORTFOLIO_DATA = {
      { title, description, image, stack: [], github, link, category, featured } */
   projects: [
     {
+      title: "ProjectPulse",
+      description:
+        "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback that never gets lost in a group chat.",
+      image: "",
+      stack: [ "HTML", "CSS", "JavaScript" ],
+      github: "https://github.com/theTerminatorrr/ProjectPulse",
+      link: "https://theterminatorrr.github.io/ProjectPulse/",
+      category: "Web Development",
+      featured: true
+    },
+
+    {
       title: "Heart Disease Detection",
       description:
         "An interactive logistic regression classifier that estimates cardiac risk from patient data, paired with a simple web interface for entering values and viewing the prediction.",
       image: "",
       stack: ["Python", "Logistic Regression", "HTML", "CSS", "JavaScript"],
       github: "https://github.com/theTerminatorrr/Heart-Disease-Detection-",
-      link: "",
+      link: "https://theterminatorrr.github.io/Heart-Disease-Detection-/",
       category: "Machine Learning",
       featured: true
-    }
+    },
   ],
 
 

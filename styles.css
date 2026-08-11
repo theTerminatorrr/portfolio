@@ -644,6 +644,11 @@ button {
   display: none;
 }
 
+#resumeBtn{
+  color:var(--glass-highlight);
+  border-color: #9cd0ee;
+}
+
 /* ==================================================================
    SOCIAL ICONS
 ================================================================== */
@@ -695,7 +700,7 @@ button {
 .section {
   position: relative;
   z-index: 1;
-  padding: 60px 24px;
+  padding: 60px 25px;
 }
 
 .section__inner {
