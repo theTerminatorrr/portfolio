@@ -128,7 +128,9 @@ window.PORTFOLIO_DATA = {
   /* ---------------- EXPERIENCE ----------------
      Empty on purpose — add entries as they happen. Each item:
      { role, org, period, description, current } */
-  experience: [],
+  experience: [
+    
+  ],
  
   /* ---------------- PROJECTS ----------------
      Empty on purpose. Each item:
