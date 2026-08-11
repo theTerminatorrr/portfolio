@@ -34,6 +34,7 @@ window.PORTFOLIO_DATA = {
   /* ---------------- SOCIAL LINKS ----------------
      Leave any value "" and that icon disappears automatically. */
   socials: {
+    email: "jahiduljony60@gmail.com",
     linkedin: "https://www.linkedin.com/in/terminator-t60/",
     instagram: "https://www.instagram.com/__.the_terminator.__",
     facebook: "https://www.facebook.com/Jony.terminator",
