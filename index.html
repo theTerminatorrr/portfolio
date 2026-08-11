@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahidul Islam Jony</title>
+  <meta name="description" content="Portfolio of Jahidul Islam Jony, a Computer Science and Engineering student at United International University focused on AI, machine learning, computer vision, and NLP research." />
+  <meta name="theme-color" content="#070c1a" />
+  <link rel="canonical" href="https://jahidulislamjony.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jahidul Islam Jony" />
+  <meta property="og:description" content="Computer Science and Engineering student exploring AI, machine learning, computer vision, and NLP research." />
+  <meta property="og:image" content="/public/images/og-cover.jpg" />
+  <meta property="og:url" content="https://jahidulislamjony.dev/" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jahidul Islam Jony — CSE Student & AI/ML Researcher" />
+  <meta name="twitter:description" content="Computer Science and Engineering student exploring AI, machine learning, computer vision, and NLP research." />
+  <meta name="twitter:image" content="/public/images/og-cover.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230b1730%22/><text x=%2212%22 y=%2216.5%22 font-size=%2212%22 font-family=%22monospace%22 fill=%22%23c9a961%22 text-anchor=%22middle%22>J</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jahidul Islam Jony",
+    "jobTitle": "Computer Science and Engineering Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "United International University"
+    },
+    "knowsAbout": ["Machine Learning", "Artificial Intelligence", "Computer Vision", "Natural Language Processing"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <canvas id="net-canvas" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" data-brand-name>Jahidul Islam Jony</a>
+
+      <nav id="navMenu" class="nav__menu">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#research">Research</a>
+        <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#achievements">Achievements</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle light and dark theme">
+          <svg class="icon-btn__sun" viewBox="0 0 24 24"><path d="M12 4V2m0 20v-2M4 12H2m20 0h-2M5.6 5.6 4.2 4.2m15.6 15.6-1.4-1.4M5.6 18.4 4.2 19.8M19.8 4.2l-1.4 1.4M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></svg>
+          <svg class="icon-btn__moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        </button>
+        <button id="navToggle" class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p id="heroEyebrow" class="eyebrow reveal">Computer Science &amp; Engineering Student</p>
+        <h1 id="heroName" class="hero__name reveal">Jahidul Islam Jony</h1>
+        <p id="heroFocus" class="hero__focus reveal">AI/ML Enthusiast · Future Researcher</p>
+        <p id="heroTagline" class="hero__tagline reveal">
+          Passionate about Artificial Intelligence, Machine Learning, Computer Vision, and NLP —
+          building intelligent solutions that create meaningful impact.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a id="heroGithubBtn" class="btn btn--primary" href="#" target="_blank" rel="noopener" hidden>View GitHub</a>
+          <a href="#contact" class="btn btn--ghost">Let's Connect</a>
+          <a id="resumeBtn" class="btn btn--outline" href="#" download hidden>Download Resume</a>
+        </div>
+
+        <div id="heroSocials" class="socials reveal" aria-label="Social links"></div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="section__inner about">
+        <div class="about__photo reveal">
+          <div id="avatarFrame" class="avatar-frame avatar-frame--empty">
+            <img id="avatarImg" alt="" style="display:none" />
+            <span class="avatar-frame__placeholder" aria-hidden="true">JIJ</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow reveal">01 · About</p>
+          <h2 class="section__title reveal">Who I am</h2>
+          <div id="aboutText" class="about__text"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="section__inner">
+        <p class="eyebrow reveal">02 · Skills</p>
+        <h2 class="section__title reveal">What I work with</h2>
+        <div id="skillsGroups" class="skills__groups"></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="section__inner">
+        <p class="eyebrow reveal">03 · Experience</p>
+        <h2 class="section__title reveal">Where I've worked</h2>
+        <ul id="experienceList" class="timeline"></ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="section__inner">
+        <p class="eyebrow reveal">04 · Projects</p>
+        <h2 class="section__title reveal">Things I've built</h2>
+        <div id="projectsGrid" class="projects__grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section">
+      <div class="section__inner">
+        <p class="eyebrow reveal">05 · Research</p>
+        <h2 class="section__title reveal">Research &amp; publications</h2>
+
+        <p class="section__lede reveal">Areas I'm actively reading and building in:</p>
+        <div id="researchInterests" class="skills__tags skills__tags--center"></div>
+
+        <div id="publicationsList" class="pub-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <div class="section__inner">
+        <p class="eyebrow reveal">06 · Education</p>
+        <h2 class="section__title reveal">Academic background</h2>
+        <ul id="timeline" class="timeline"></ul>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section">
+      <div class="section__inner">
+        <p class="eyebrow reveal">07 · Achievements</p>
+        <h2 class="section__title reveal">Awards &amp; certificates</h2>
+        <div id="achievementsGrid" class="achievements__grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="section__inner contact">
+        <div class="contact__intro">
+          <p class="eyebrow reveal">08 · Contact</p>
+          <h2 class="section__title reveal">Let's talk</h2>
+          <p class="section__lede reveal">
+            Open to research collaborations, internships, and interesting technical conversations.
+          </p>
+          <a id="emailLink" class="contact__email reveal" href="#">Email coming soon</a>
+          <div id="socials" class="socials reveal" aria-label="Social links"></div>
+        </div>
+
+        <form id="contactForm" class="contact-form glass-panel reveal" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="cf-subject">Subject</label>
+            <input id="cf-subject" name="subject" type="text" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+          </div>
+          <!-- Honeypot: hidden from real visitors, catches simple bots -->
+          <div class="field field--hidden" aria-hidden="true">
+            <label for="cf-company">Company</label>
+            <input id="cf-company" name="company" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p id="footerName" class="footer__name" data-brand-name>Jahidul Islam Jony</p>
+        <p class="footer__tag">Computer Science &amp; Engineering · AI/ML · Research</p>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div id="footerSocials" class="socials" aria-label="Social links"></div>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Jahidul Islam Jony. All rights reserved.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
