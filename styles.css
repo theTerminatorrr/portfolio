@@ -2702,15 +2702,15 @@ button {
 }
 
 .cursor-ring {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   border: 1.5px solid var(--glass-border-strong);
   transition: width 0.25s var(--ease), height 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 
 .cursor-ring--active {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-color: var(--accent);
 }
 
