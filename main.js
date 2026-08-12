@@ -500,8 +500,8 @@
       dot.style.transform = `translate(${mx}px, ${my}px)`;
     });
     (function loop() {
-      rx += (mx - rx) * 0.18;
-      ry += (my - ry) * 0.18;
+      rx += (mx - rx) * 0.10;
+      ry += (my - ry) * 0.10;
       ring.style.transform = `translate(${rx}px, ${ry}px)`;
       requestAnimationFrame(loop);
     })();
@@ -602,7 +602,7 @@
 
       maybeSpawnPulse();
       pulses.forEach(p => {
-        p.t += 0.0007;
+        p.t += 0.07;
         const x = p.a.x + (p.b.x - p.a.x) * p.t;
         const y = p.a.y + (p.b.y - p.a.y) * p.t;
         ctx.fillStyle = isLight() ? "rgba(100, 70, 10, 0.9)" : "rgba(227, 205, 149, 0.9)";
@@ -660,12 +660,7 @@
     initReveal();
     initHeroLight();
     initCursor();
-    if (!isTouch && window.innerWidth > 860) {
-      initCanvas();
-    } else {
-      const canvas = document.getElementById("net-canvas");
-      if (canvas) canvas.remove();
-    }
+    initCanvas();
     initContactForm();
     initEntrance();
   });
