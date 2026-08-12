@@ -44,11 +44,7 @@ window.PORTFOLIO_DATA = {
     orcid: ""
   },
 
-  /* ---------------- CONTACT FORM ----------------
-     This is a static site with no server. To receive messages,
-     sign up for a free form backend (e.g. Formspree, Web3Forms)
-     and paste the endpoint URL below. Until then, the form falls
-     back to opening the visitor's email client (mailto). */
+  /* ---------------- CONTACT FORM ---------------- */
   contactEndpoint: "https://formspree.io/f/moeadply",
 
   /* ---------------- ABOUT ---------------- */
@@ -71,8 +67,9 @@ window.PORTFOLIO_DATA = {
         { name: "HTML", icon: "devicon-html5-plain colored" },
         { name: "CSS", icon: "devicon-css3-plain colored" },
         { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+        { name: "SQL", icon: "devicon-mysql-plain colored" },
+
         /* { name: "TypeScript",   icon: "devicon-typescript-plain colored" },
-        { name: "SQL",     icon: "devicon-mysql-plain colored" },
         { name: "Rust",    icon: "devicon-rust-plain colored" }, */
       ]
     },
@@ -89,6 +86,7 @@ window.PORTFOLIO_DATA = {
       group: "Backend",
       items: [
         { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+
         /* { name: "Express.js", icon: "devicon-express-original colored" },
         { name: "Django",     icon: "devicon-django-plain colored" }, */
       ]
@@ -113,12 +111,16 @@ window.PORTFOLIO_DATA = {
         { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
         { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
         { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
+        { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
       ]
     },
     {
       group: "Currently Exploring",
       items: [
-        { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
+        { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
+        { name: "Reinforcement Learning", icon: "emoji", emoji: "🎮" },
+        { name: "Generative AI", icon: "emoji", emoji: "🎨" },
+        { name: "Digital Signal Processing", icon: "emoji", emoji: "📡" },
         { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
         { name: "Applied AI Engineering", icon: "emoji", emoji: "⚙️" }
       ]
@@ -131,6 +133,25 @@ window.PORTFOLIO_DATA = {
      Empty on purpose — add entries as they happen. Each item:
      { role, org, period, description, current } */
   experience: [
+    /*
+    {
+      role: "Machine Learning Intern",
+      org: "AI Lab, United International University (UIU), Bangladesh",
+      period: "Jan 2026 - Present",
+      description:
+        "Working on research and development of machine learning models for various applications, including natural language processing and computer vision.",
+      current: true
+    },
+
+    {
+      role: "Research Assistant",
+      org: "AI Lab, United International University (UIU), Bangladesh",
+      period: "Sep 2024 - Dec 2025",
+      description:
+        "Assisted in research projects related to machine learning and artificial intelligence, contributing to data collection, model training, and evaluation.",
+      current: false    
+    }
+  */
 
   ],
 
@@ -143,7 +164,7 @@ window.PORTFOLIO_DATA = {
       description:
         "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback that never gets lost in a group chat.",
       image: "",
-      stack: [ "HTML", "CSS", "JavaScript" ],
+      stack: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/theTerminatorrr/ProjectPulse",
       link: "https://theterminatorrr.github.io/ProjectPulse/",
       category: "Web Development",
@@ -171,12 +192,15 @@ window.PORTFOLIO_DATA = {
     { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
     { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
     { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+    { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
     { name: "Computer Vision", icon: "emoji", emoji: "🔍" },
     { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
-    { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
-    { name: "Artificial Intelligence", icon: "emoji", emoji: "✨" }
   ],
   publications: [
+    {
+      title: "Ethical Implications of Machine Learning in Decision-Making",
+      link: "https://www.example.com/publication1"      
+    }
 
 
   ],
