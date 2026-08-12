@@ -700,7 +700,7 @@ button {
 .section {
   position: relative;
   z-index: 1;
-  padding: 60px 25px;
+  padding: 50px 25px;
 }
 
 .section__inner {
@@ -1210,7 +1210,7 @@ button {
 .footer {
   position: relative;
   z-index: 1;
-  padding: 60px 24px 30px;
+  padding: 30px 24px;
   border-top: 1px solid var(--glass-border);
 }
 
@@ -1276,14 +1276,14 @@ button {
 }
 
 .cursor-dot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   background: var(--accent);
 }
 
 .cursor-ring {
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   border: 1.5px solid var(--glass-border-strong);
   transition: width 0.25s var(--ease), height 0.25s var(--ease), border-color 0.25s var(--ease);
 }
@@ -1368,7 +1368,7 @@ button {
   }
 
   .section {
-    padding: 80px 20px;
+    padding: 30px 20px;
   }
 }
 
