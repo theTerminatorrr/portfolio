@@ -313,7 +313,7 @@ button {
 ================================================================== */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(18px);
   transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
 }
 
@@ -371,7 +371,7 @@ button {
 
 .nav__menu {
   display: flex;
-  gap: 4px;
+  gap: 15px;
 }
 
 .nav__link {
@@ -479,6 +479,7 @@ button {
   --my: 35%;
 }
 
+
 /*
 .hero__glow {
   position: absolute;
@@ -491,6 +492,7 @@ button {
     radial-gradient(900px circle at 85% 80%, rgba(111, 177, 224, 0.08), transparent 60%);
 }
 */
+
 
 .hero__inner {
   max-width: 760px;
@@ -645,6 +647,7 @@ button {
 .btn[hidden] {
   display: none;
 }
+ 
 
 /* ==================================================================
    SOCIAL ICONS
@@ -657,12 +660,12 @@ button {
 }
 
 .hero .socials {
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .social-icon {
-  width: 38px;
-  height: 38px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -697,7 +700,7 @@ button {
 .section {
   position: relative;
   z-index: 1;
-  padding: 110px 24px;
+  padding: 60px 25px;
 }
 
 .section__inner {
@@ -723,14 +726,14 @@ button {
 .about {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: 64px;
+  gap: 65px;
   align-items: start;
 }
 
 .avatar-frame {
   position: relative;
   aspect-ratio: 1;
-  border-radius: 24px;
+  border-radius: 25px;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   overflow: hidden;
@@ -980,7 +983,7 @@ button {
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  gap: 25px;
 }
 
 .project-card {
@@ -1303,6 +1306,10 @@ button {
    RESPONSIVE
 ================================================================== */
 @media (max-width: 860px) {
+  .nav__inner {
+    overflow: visible;
+  }
+
   .nav__menu {
     position: fixed;
     inset: 74px 16px auto 16px;
@@ -1341,27 +1348,6 @@ button {
     max-width: 46vw;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  /* Performance: fixed backgrounds + heavy blur are expensive on mobile GPUs */
-  body {
-    background-attachment: scroll;
-  }
-
-  .glass-panel,
-  .nav__inner,
-  .skills__group,
-  .project-card,
-  .contact-form,
-  .avatar-frame,
-  .pub-card,
-  .achievement-card,
-  .empty-state,
-  .social-icon,
-  .icon-btn,
-  .nav__toggle {
-    backdrop-filter: blur(10px) saturate(140%);
-    -webkit-backdrop-filter: blur(10px) saturate(140%);
   }
 
   body.no-scroll {
