@@ -547,9 +547,9 @@
       nodes = Array.from({ length: count }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
-        vx: (Math.random() - 0.5) * 0.9,
-        vy: (Math.random() - 0.5) * 0.9,
-        r: Math.random() * 1.4 + 0.6
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+        r: Math.random() * 1.5 + 0.5
       }));
     }
 
