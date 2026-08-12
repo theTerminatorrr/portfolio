@@ -31,7 +31,7 @@
     scholar: `<svg viewBox="0 0 24 24"><path d="M12 1L0 9l4 2.5V19l8 4 8-4v-7.5L24 9 12 1zm0 2.4L20.2 9 12 14.6 3.8 9 12 3.4zM6 12.9l6 3.75 6-3.75V17l-6 3-6-3v-4.1z"/></svg>`,
     orcid: `<svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM7.4 4.9c.8 0 1.4.6 1.4 1.4S8.2 7.7 7.4 7.7 6 7.1 6 6.3s.6-1.4 1.4-1.4zM6.5 9.4h1.8v9.7H6.5V9.4zm3.7 0h3.8c3.6 0 5.3 2.6 5.3 4.9 0 2.5-2 4.9-5.3 4.9h-3.8V9.4zm1.8 1.6v6.6h1.8c2.6 0 3.6-1.9 3.6-3.3 0-1.8-1.1-3.3-3.7-3.3h-1.7z"/></svg>`,
     email: `<svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1.4 2L12 12.5 20.6 6H3.4zM3 8.2V18h18V8.2l-8.4 6.6a1 1 0 0 1-1.2 0L3 8.2z"/></svg>`,
-    whatsapp: `<svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5C11 9 10.5 7.8 10.3 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1.1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.3-.6-.5zM12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 1.7.5 3.4 1.3 4.9L2 21.8l5-1.3c1.4.8 3 1.2 4.6 1.2h.1c5.4 0 9.8-4.4 9.8-9.8 0-2.6-1-5.1-2.9-6.9C16.7 3.2 14.2 2.2 12 2.2zm0 17.9h-.1c-1.4 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3c-.8-1.3-1.2-2.7-1.2-4.2 0-4.4 3.6-8 8-8 2.1 0 4.1.8 5.6 2.3 1.5 1.5 2.4 3.5 2.4 5.6-.1 4.5-3.6 8-8 8z"/></svg>`
+    whatsapp: `<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.66 15L2 22l5.18-1.36A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.13l-.3-.18-3.07.8.82-2.99-.2-.31A8 8 0 1 1 12 20zm4.1-5.9c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11s-.57.71-.7.86c-.13.15-.26.17-.48.06a6.5 6.5 0 0 1-1.92-1.18 7.2 7.2 0 0 1-1.33-1.65c-.14-.24 0-.37.1-.49.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.69-1.64-.18-.43-.37-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.78.76-.78 1.85s.8 2.15.91 2.3c.11.15 1.57 2.4 3.8 3.36.53.23.94.36 1.26.46.53.17 1.01.15 1.39.09.43-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.06-.09-.2-.15-.42-.26z"/></svg>`,
   };
 
   function renderSocialIcons(containerId, includeEmail) {
@@ -199,8 +199,8 @@
             : ""
           }
           <div class="project-card__links">
-            ${p.github ? `<a href="${escapeAttr(p.github)}" target="_blank" rel="noopener">Code on GitHub ↗</a>` : ""}
-            ${p.link ? `<a href="${escapeAttr(p.link)}" target="_blank" rel="noopener">Live Server ↗</a>` : ""}
+            ${p.github ? `<a href="${escapeAttr(p.github)}" target="_blank" rel="noopener">Code ↗</a>` : ""}
+            ${p.link ? `<a href="${escapeAttr(p.link)}" target="_blank" rel="noopener">Live ↗</a>` : ""}
           </div>
         </div>
       </article>`
@@ -500,8 +500,8 @@
       dot.style.transform = `translate(${mx}px, ${my}px)`;
     });
     (function loop() {
-      rx += (mx - rx) * 0.07;
-      ry += (my - ry) * 0.07;
+      rx += (mx - rx) * 0.10;
+      ry += (my - ry) * 0.10;
       ring.style.transform = `translate(${rx}px, ${ry}px)`;
       requestAnimationFrame(loop);
     })();
@@ -528,7 +528,8 @@
     const NODE_COUNT_DIVISOR = 14000;
 
     function resize() {
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const mobile = window.innerWidth <= 860;
+      dpr = Math.min(window.devicePixelRatio || 1, mobile ? 1 : 2);
       w = window.innerWidth;
       h = window.innerHeight;
       canvas.width = w * dpr;
@@ -540,12 +541,14 @@
     }
 
     function seedNodes() {
-      const count = Math.max(24, Math.min(70, Math.floor((w * h) / NODE_COUNT_DIVISOR)));
+      const mobile = window.innerWidth <= 860;
+      const cap = mobile ? 26 : 70;
+      const count = Math.max(16, Math.min(cap, Math.floor((w * h) / NODE_COUNT_DIVISOR)));
       nodes = Array.from({ length: count }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
-        vx: (Math.random() - 0.5) * 2.5,
-        vy: (Math.random() - 0.5) * 2.5,
+        vx: (Math.random() - 0.5) * 0.9,
+        vy: (Math.random() - 0.5) * 0.9,
         r: Math.random() * 1.4 + 0.6
       }));
     }
@@ -599,7 +602,7 @@
 
       maybeSpawnPulse();
       pulses.forEach(p => {
-        p.t += 0.7;
+        p.t += 0.07;
         const x = p.a.x + (p.b.x - p.a.x) * p.t;
         const y = p.a.y + (p.b.y - p.a.y) * p.t;
         ctx.fillStyle = isLight() ? "rgba(100, 70, 10, 0.9)" : "rgba(227, 205, 149, 0.9)";
@@ -613,6 +616,13 @@
     }
 
     window.addEventListener("resize", resize);
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        cancelAnimationFrame(rafId);
+      } else if (!reduceMotion) {
+        step();
+      }
+    });
     resize();
 
     if (reduceMotion) {
