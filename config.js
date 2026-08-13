@@ -61,16 +61,15 @@ window.PORTFOLIO_DATA = {
       group: "Programming Languages",
       items: [
         { name: "Python", icon: "devicon-python-plain colored" },
-        { name: "Java", icon: "devicon-java-plain colored" },
+        { name: "Rust", icon: "devicon-rust-plain colored" },
         { name: "C++", icon: "devicon-cplusplus-plain colored" },
+        { name: "Java", icon: "devicon-java-plain colored" },
+        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
         { name: "C", icon: "devicon-c-plain colored" },
         { name: "HTML", icon: "devicon-html5-plain colored" },
         { name: "CSS", icon: "devicon-css3-plain colored" },
-        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
         { name: "SQL", icon: "devicon-mysql-plain colored" },
 
-        /* { name: "TypeScript",   icon: "devicon-typescript-plain colored" },
-        { name: "Rust",    icon: "devicon-rust-plain colored" }, */
       ]
     },
 
@@ -199,7 +198,7 @@ window.PORTFOLIO_DATA = {
   publications: [
     {
       title: "Ethical Implications of Machine Learning in Decision-Making",
-      link: "https://www.example.com/publication1"      
+      link: "https://www.example.com/publication1"
     }
 
 
