@@ -51,6 +51,8 @@
       rgba(255, 255, 255, 0.04) 22%,
       transparent 45%);
   --shadow: 0 20px 60px rgba(2, 5, 15, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  --shadow: 0 20px 60px rgba(2, 5, 15, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  --nav-mobile-bg: rgba(7, 12, 26, 0.94);
 
   --text: var(--ink-100);
   --text-muted: var(--ink-300);
@@ -95,6 +97,8 @@
       rgba(255, 255, 255, 0.15) 22%,
       transparent 45%);
   --shadow: 0 20px 50px rgba(40, 110, 180, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 -1px 0 rgba(40, 110, 180, 0.08);
+  --shadow: 0 20px 50px rgba(40, 110, 180, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 -1px 0 rgba(40, 110, 180, 0.08);
+  --nav-mobile-bg: rgba(234, 244, 253, 0.96);
 
   --text: #0b1f38;
   --text-muted: #33506f;
@@ -647,7 +651,7 @@ button {
 .btn[hidden] {
   display: none;
 }
- 
+
 
 /* ==================================================================
    SOCIAL ICONS
@@ -1315,7 +1319,7 @@ button {
     inset: 74px 16px auto 16px;
     flex-direction: column;
     padding: 16px;
-    background: var(--glass-bg-strong);
+    background: var(--nav-mobile-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius);
     backdrop-filter: blur(20px);
