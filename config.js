@@ -38,6 +38,7 @@ window.PORTFOLIO_DATA = {
     linkedin: "https://www.linkedin.com/in/terminator-t60/",
     instagram: "https://www.instagram.com/__.the_terminator.__",
     facebook: "https://www.facebook.com/Jony.terminator",
+    x: "https://x.com/terminatorr_t60",
     github: "https://github.com/theTerminatorrr",
     whatsapp: "https://wa.me/8801308755671",
     scholar: "",
