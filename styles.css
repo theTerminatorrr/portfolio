@@ -478,7 +478,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 24px 60px;
+  padding: 50px 25px 60px;
   --mx: 50%;
   --my: 35%;
 }
