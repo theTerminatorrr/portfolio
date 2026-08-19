@@ -57,7 +57,8 @@ window.PORTFOLIO_DATA = {
     "I learn best in the open: reading papers, breaking code on purpose, and building things with people who know more than I do."
   ],
 
-  /* ---------------- SKILLS ---------------- */skills: [
+  /* ---------------- SKILLS ---------------- */
+  skills: [
     {
       group: "Programming Languages",
       items: [
@@ -114,6 +115,24 @@ window.PORTFOLIO_DATA = {
         { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
       ]
     },
+    
+  ],
+
+  /* ---------------- EXPERTISE ----------------
+     A separate, focused section — the handful of things you'd
+     confidently call yourself expert in, shown as its own group
+     of tags, same visual style as the Skills section above. */
+  expertise: [
+    {
+      group: "Core Expertise",
+      items: [
+        { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
+        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
+        { name: "Python", icon: "devicon-python-plain colored" },
+        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" }
+      ]
+    },
+
     {
       group: "Currently Exploring",
       items: [
@@ -124,7 +143,7 @@ window.PORTFOLIO_DATA = {
         { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
         { name: "Applied AI Engineering", icon: "emoji", emoji: "⚙️" }
       ]
-    }
+    },
   ],
 
 

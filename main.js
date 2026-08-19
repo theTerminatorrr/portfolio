@@ -128,10 +128,10 @@
     return `${iconHtml}${escapeHTML(name)}`;
   }
 
-  function renderSkills() {
-    const wrap = document.getElementById("skillsGroups");
-    if (!wrap || !Array.isArray(data.skills)) return;
-    wrap.innerHTML = data.skills
+    function renderSkillGroups(containerId, groups) {
+    const wrap = document.getElementById(containerId);
+    if (!wrap || !Array.isArray(groups)) return;
+    wrap.innerHTML = groups
       .map(
         group => `
       <div class="skills__group reveal">
@@ -143,6 +143,14 @@
     `
       )
       .join("");
+  }
+
+  function renderSkills() {
+    renderSkillGroups("skillsGroups", data.skills);
+  }
+
+  function renderExpertise() {
+    renderSkillGroups("expertiseGroups", data.expertise);
   }
 
   /* ----------------------------------------------------------------
@@ -638,6 +646,7 @@
     renderHero();
     renderAbout();
     renderSkills();
+    renderExpertise();
     renderExperience();
     renderProjects();
     renderResearch();
