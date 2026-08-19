@@ -128,7 +128,7 @@
     return `${iconHtml}${escapeHTML(name)}`;
   }
 
-    function renderSkillGroups(containerId, groups) {
+  function renderSkillGroups(containerId, groups) {
     const wrap = document.getElementById(containerId);
     if (!wrap || !Array.isArray(groups)) return;
     wrap.innerHTML = groups
@@ -645,8 +645,8 @@
   document.addEventListener("DOMContentLoaded", () => {
     renderHero();
     renderAbout();
-    renderSkills();
     renderExpertise();
+    renderSkills();
     renderExperience();
     renderProjects();
     renderResearch();

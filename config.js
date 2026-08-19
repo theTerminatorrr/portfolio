@@ -57,13 +57,53 @@ window.PORTFOLIO_DATA = {
     "I learn best in the open: reading papers, breaking code on purpose, and building things with people who know more than I do."
   ],
 
+
+  /* ---------------- EXPERTISE ----------------
+     A separate, focused section — the handful of things you'd
+     confidently call yourself expert in, shown as its own group
+     of tags, same visual style as the Skills section above. */
+  expertise: [
+    {
+      group: "Core Expertise",
+      items: [
+        { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
+        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
+        { name: "Python", icon: "devicon-python-plain colored" },
+      ]
+    },
+
+    {
+      group: "AI / ML Focus",
+      items: [
+        { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
+        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+        { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
+        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
+        { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
+      ]
+    },
+
+    {
+      group: "Currently Exploring",
+      items: [
+        { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
+        { name: "Reinforcement Learning", icon: "emoji", emoji: "🎮" },
+        { name: "Generative AI", icon: "emoji", emoji: "🎨" },
+        { name: "Digital Signal Processing", icon: "emoji", emoji: "📡" },
+        { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
+        { name: "Applied AI Engineering", icon: "emoji", emoji: "⚙️" }
+      ]
+    },
+  ],
+
+
   /* ---------------- SKILLS ---------------- */
   skills: [
     {
       group: "Programming Languages",
       items: [
         { name: "Python", icon: "devicon-python-plain colored" },
-        { name: "Rust", icon: "devicon-rust-plain colored" },
         { name: "C++", icon: "devicon-cplusplus-plain colored" },
         { name: "Java", icon: "devicon-java-plain colored" },
         { name: "JavaScript", icon: "devicon-javascript-plain colored" },
@@ -93,7 +133,6 @@ window.PORTFOLIO_DATA = {
       ]
     },
 
-
     {
       group: "Tools",
       items: [
@@ -106,47 +145,16 @@ window.PORTFOLIO_DATA = {
     },
 
     {
-      group: "AI / ML Focus",
-      items: [
-        { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
-        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
-        { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
-        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
-        { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
-      ]
-    },
-    
-  ],
-
-  /* ---------------- EXPERTISE ----------------
-     A separate, focused section — the handful of things you'd
-     confidently call yourself expert in, shown as its own group
-     of tags, same visual style as the Skills section above. */
-  expertise: [
-    {
-      group: "Core Expertise",
-      items: [
-        { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
-        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
-        { name: "Python", icon: "devicon-python-plain colored" },
-        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" }
-      ]
-    },
-
-    {
       group: "Currently Exploring",
       items: [
-        { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
-        { name: "Reinforcement Learning", icon: "emoji", emoji: "🎮" },
-        { name: "Generative AI", icon: "emoji", emoji: "🎨" },
-        { name: "Digital Signal Processing", icon: "emoji", emoji: "📡" },
-        { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
-        { name: "Applied AI Engineering", icon: "emoji", emoji: "⚙️" }
+        { name: "Rust", icon: "devicon-rust-plain colored" },
+        { name: "Go", icon: "devicon-go-plain colored" },
+        { name: "C#", icon: "devicon-csharp-plain colored" },
+
       ]
-    },
+    }
+
   ],
-
-
 
   /* ---------------- EXPERIENCE ----------------
      Empty on purpose — add entries as they happen. Each item:

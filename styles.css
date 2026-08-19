@@ -258,6 +258,7 @@ button {
   isolation: isolate;
   overflow: hidden;
 }
+
 .glass-panel::before,
 .nav__inner::before,
 .skills__group::before,
@@ -513,7 +514,7 @@ button {
 }
 
 .hero__name {
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
@@ -729,9 +730,13 @@ button {
 ================================================================== */
 .about {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 500px 1fr;
   gap: 65px;
   align-items: start;
+}
+
+.about__photo {
+  margin-top: 50px;
 }
 
 .avatar-frame {
@@ -1314,7 +1319,7 @@ button {
     overflow: visible;
   }
 
-.nav__menu {
+  .nav__menu {
     position: fixed;
     inset: 74px 16px auto 16px;
     flex-direction: column;
@@ -1330,13 +1335,13 @@ button {
     transition: transform 0.3s var(--ease), opacity 0.3s var(--ease), visibility 0.3s var(--ease);
   }
 
-.nav__menu.is-open {
+  .nav__menu.is-open {
     transform: translateY(0) scale(1);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
-  
+
   .nav__link {
     padding: 12px 14px;
   }
@@ -1365,7 +1370,7 @@ button {
   }
 
   .about__photo {
-    max-width: 220px;
+    max-width: 250px;
     margin: 0 auto;
   }
 
