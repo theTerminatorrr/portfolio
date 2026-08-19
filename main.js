@@ -490,11 +490,11 @@
     });
   }
 
-  /* ----------------------------------------------------------------
-     CUSTOM CURSOR (desktop only)
+    /* ----------------------------------------------------------------
+     CUSTOM CURSOR (all devices, including touch)
   ---------------------------------------------------------------- */
   function initCursor() {
-    if (isTouch || reduceMotion) return;
+    if (reduceMotion) return;
     const dot = document.createElement("div");
     const ring = document.createElement("div");
     dot.className = "cursor-dot";
@@ -503,11 +503,31 @@
     document.body.classList.add("has-custom-cursor");
 
     let rx = 0, ry = 0, mx = 0, my = 0;
-    window.addEventListener("pointermove", e => {
-      mx = e.clientX;
-      my = e.clientY;
+    let hideTimer = null;
+
+    function showCursor(x, y) {
+      mx = x;
+      my = y;
       dot.style.transform = `translate(${mx}px, ${my}px)`;
-    });
+      dot.style.opacity = "1";
+      ring.style.opacity = "1";
+      if (hideTimer) clearTimeout(hideTimer);
+    }
+
+    window.addEventListener("pointermove", e => showCursor(e.clientX, e.clientY));
+
+    // On touch devices there's no persistent pointer, so fade the
+    // cursor out shortly after the finger lifts instead of leaving
+    // it stuck at the last touch point.
+    if (isTouch) {
+      window.addEventListener("pointerup", () => {
+        hideTimer = setTimeout(() => {
+          dot.style.opacity = "0";
+          ring.style.opacity = "0";
+        }, 400);
+      });
+    }
+
     (function loop() {
       rx += (mx - rx) * 0.07;
       ry += (my - ry) * 0.07;
@@ -519,9 +539,7 @@
       el.addEventListener("mouseenter", () => ring.classList.add("cursor-ring--active"));
       el.addEventListener("mouseleave", () => ring.classList.remove("cursor-ring--active"));
     });
-  }
-
-  /* ----------------------------------------------------------------
+  }  /* ----------------------------------------------------------------
      AMBIENT NEURAL-NETWORK CANVAS
      Drifting nodes connected by faint lines, with the occasional
      signal pulse traveling along an edge — a nod to the subject's
