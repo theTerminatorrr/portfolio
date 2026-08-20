@@ -111,7 +111,6 @@ window.PORTFOLIO_DATA = {
         { name: "HTML", icon: "devicon-html5-plain colored" },
         { name: "CSS", icon: "devicon-css3-plain colored" },
         { name: "SQL", icon: "devicon-mysql-plain colored" },
-
       ]
     },
 
@@ -127,6 +126,7 @@ window.PORTFOLIO_DATA = {
       group: "Backend",
       items: [
         { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+        { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
 
         /* { name: "Express.js", icon: "devicon-express-original colored" },
         { name: "Django",     icon: "devicon-django-plain colored" }, */
@@ -141,6 +141,9 @@ window.PORTFOLIO_DATA = {
         { name: "VS Code", icon: "devicon-vscode-plain colored" },
         { name: "Jupyter", icon: "devicon-jupyter-plain colored" },
         { name: "PyCharm", icon: "devicon-pycharm-plain colored" },
+        { name: "Google Colab", icon: "devicon-google-plain colored" },
+        { name: "Docker", icon: "devicon-docker-plain colored" },
+        { name: "Linux", icon: "devicon-linux-plain colored" },
       ]
     },
 
@@ -150,7 +153,7 @@ window.PORTFOLIO_DATA = {
         { name: "Rust", icon: "devicon-rust-plain colored" },
         { name: "Go", icon: "devicon-go-plain colored" },
         { name: "C#", icon: "devicon-csharp-plain colored" },
-
+        { name: "Flutter", icon: "devicon-flutter-plain colored" },
       ]
     }
 
