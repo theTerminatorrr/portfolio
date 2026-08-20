@@ -2,17 +2,7 @@
  * ============================================================
  *  PORTFOLIO DATA — the ONLY file you should need to touch
  *  to update content. No component code needs to change.
- * ============================================================
- *
- *  HOW TO EDIT:
- *  - Replace empty strings "" with real values as you get them.
- *  - Empty social links are automatically hidden.
- *  - Empty arrays render an elegant "empty state" instead of
- *    breaking the layout, per your instructions never to
- *    invent projects, publications, experience, or awards.
- *  - Images: drop files into /public/images or /public/projects
- *    and point to them, e.g. "images/profile.jpg".
- */
+ * =========================================================== */
 
 window.PORTFOLIO_DATA = {
   /* ---------------- IDENTITY ---------------- */
@@ -22,17 +12,14 @@ window.PORTFOLIO_DATA = {
   tagline:
     "Undergraduate CSE student, Passionate about building a foundation across Machine Learning, Computer Vision, Natural Language Processing, Digital Image processing and Multimodal Systems. — building intelligent solutions that create meaningful impact.",
 
-  // Path to profile photo. Leave "" to show a placeholder frame.
   avatar: "assets/Jony.jpg",
 
-  // Path to resume/CV PDF. Leave "" to hide the download button.
   resume: "assets/Jony_Resume.pdf",
 
-  // Public email shown in Contact + used for the mailto fallback.
+
   email: "jahiduljony60@gmail.com",
 
-  /* ---------------- SOCIAL LINKS ----------------
-     Leave any value "" and that icon disappears automatically. */
+  /* ---------------- SOCIAL LINKS ---------------- */
   socials: {
     email: "jahiduljony60@gmail.com",
     linkedin: "https://www.linkedin.com/in/terminator-t60/",
@@ -62,13 +49,14 @@ window.PORTFOLIO_DATA = {
      A separate, focused section — the handful of things you'd
      confidently call yourself expert in, shown as its own group
      of tags, same visual style as the Skills section above. */
+
   expertise: [
     {
       group: "Core Expertise",
       items: [
         { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
         { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" } ,
-        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+        { name: "Computational Theory", icon: "emoji", emoji: "📐" } ,
         { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
       ]
     },
