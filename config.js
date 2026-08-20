@@ -67,9 +67,9 @@ window.PORTFOLIO_DATA = {
       group: "Core Expertise",
       items: [
         { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
+        { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" } ,
         { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
         { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
-        { name: "Python", icon: "devicon-python-plain colored" },
       ]
     },
 
@@ -85,6 +85,18 @@ window.PORTFOLIO_DATA = {
     },
 
     {
+      group: "Computational Foundations",
+      items: [
+        { name: "Theory of Computation", icon: "emoji", emoji: "📐" },
+        { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" },
+        { name: "Operating Systems", icon: "emoji", emoji: "💻" },
+        { name: "Computer Networks", icon: "emoji", emoji: "🌐" },
+        { name: "Database Management Systems", icon: "emoji", emoji: "🗄️" },
+        { name: "Software Engineering", icon: "emoji", emoji: "🛠️" },
+      ]
+    },
+    
+      {
       group: "Currently Exploring",
       items: [
         { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
@@ -172,7 +184,7 @@ window.PORTFOLIO_DATA = {
         "Working on research and development of machine learning models for various applications, including natural language processing and computer vision.",
       current: true
     },
-
+ 
     {
       role: "Research Assistant",
       org: "AI Lab, United International University (UIU), Bangladesh",
@@ -221,15 +233,13 @@ window.PORTFOLIO_DATA = {
   researchInterests: [
     { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
     { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
-    { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
     { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
-    { name: "Computer Vision", icon: "emoji", emoji: "🔍" },
     { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
   ],
   publications: [
     {
-      title: "Ethical Implications of Machine Learning in Decision-Making",
-      link: "https://www.example.com/publication1"
+      title: "Ethical Implications of AI in Decision-Making",
+      link: "https://drive.google.com/file/d/1ZpNwISD_KSTRXVmIWIkhXc6XDJi8sUvp/view?usp=sharing"
     }
 
 
