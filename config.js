@@ -14,7 +14,7 @@ window.PORTFOLIO_DATA = {
 
   avatar: "assets/Jony.jpg",
 
-  resume: "assets/Jony_Resume.pdf",
+  resume: "assets/Jahidul_Islam_Jony_Resume.docx",
 
 
   email: "jahiduljony60@gmail.com",
