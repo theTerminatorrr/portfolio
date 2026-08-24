@@ -65,7 +65,7 @@ window.PORTFOLIO_DATA = {
       group: "AI / ML Focus",
       items: [
         { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
-        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+        { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
         { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
         { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
         { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
@@ -87,7 +87,7 @@ window.PORTFOLIO_DATA = {
       {
       group: "Currently Exploring",
       items: [
-        { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
+        { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
         { name: "Reinforcement Learning", icon: "emoji", emoji: "🎮" },
         { name: "Generative AI", icon: "emoji", emoji: "🎨" },
         { name: "Digital Signal Processing", icon: "emoji", emoji: "📡" },
