@@ -126,10 +126,17 @@ window.PORTFOLIO_DATA = {
       group: "Backend",
       items: [
         { name: "Node.js", icon: "devicon-nodejs-plain colored" },
-        { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+        { name: "Express.js", icon: "devicon-express-original colored" },
+      ]
+    },
 
-        /* { name: "Express.js", icon: "devicon-express-original colored" },
-        { name: "Django",     icon: "devicon-django-plain colored" }, */
+
+    {
+      group: "Databases",
+      items: [
+        { name: "MySQL", icon: "devicon-mysql-plain colored" },
+        { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+        { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
       ]
     },
 
