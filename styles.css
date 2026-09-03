@@ -1014,6 +1014,7 @@ button {
   position: relative;
   aspect-ratio: 4 / 3;
   overflow: hidden;
+  border-radius: calc(var(--radius) - 8px);
 }
 
 .project-card__media img {
@@ -1042,6 +1043,7 @@ button {
   justify-content: space-between;
   gap: 14px;
   padding: 22px;
+  padding-top: 70px;
 }
 
 .project-card__text h3 {
@@ -1054,6 +1056,11 @@ button {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.88rem;
   max-width: 34ch;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-card__arrow {
@@ -1092,10 +1099,10 @@ button {
   font-family: var(--font-mono);
   padding: 4px 10px;
   border-radius: 100px;
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
   color: rgba(255, 255, 255, 0.9);
 }
 
