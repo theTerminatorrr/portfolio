@@ -210,14 +210,22 @@
               <h3>${escapeHTML(p.title)}</h3>
               <p>${escapeHTML(p.description)}</p>
             </div>
-            <a class="project-card__arrow"
-               href="${escapeAttr(p.link || p.github || "#")}"
-               ${(p.link || p.github) ? 'target="_blank" rel="noopener"' : ""}
-               aria-label="Open ${escapeAttr(p.title)}">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M13 6l6 6-6 6"/>
-              </svg>
-            </a>
+            <div class="project-card__actions">
+  ${p.github ? `
+  <a class="project-card__icon-btn" href="${escapeAttr(p.github)}" target="_blank" rel="noopener" aria-label="View ${escapeAttr(p.title)} source on GitHub">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.84 3.14 8.94 7.5 10.39.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.05.66-3.7-1.3-3.7-1.3-.5-1.27-1.22-1.61-1.22-1.61-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5-1.22-5-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.4 10.4 0 0 1 5.5 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.56 5.14-5.01 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53 4.35-1.45 7.49-5.55 7.49-10.39C23.02 5.24 18.27.5 12 .5Z"/>
+    </svg>
+  </a>` : ""}
+  <a class="project-card__arrow"
+     href="${escapeAttr(p.link || p.github || "#")}"
+     ${(p.link || p.github) ? 'target="_blank" rel="noopener"' : ""}
+     aria-label="Open ${escapeAttr(p.title)}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+  </a>
+</div>
           </div>
         </div>
       </article>`
@@ -225,6 +233,7 @@
       .join("");
   }
 
+  
   /* ----------------------------------------------------------------
  RENDER — RESEARCH
 ---------------------------------------------------------------- */

@@ -169,11 +169,12 @@ window.PORTFOLIO_DATA = {
   /* ---------------- EXPERIENCE ----------------
      Empty on purpose — add entries as they happen. Each item:
      { role, org, period, description, current } */
+
   experience: [
     /*
     {
-      role: "Machine Learning Intern",
-      org: "AI Lab, United International University (UIU), Bangladesh",
+      role: "Machine Learning Researcher",
+      org: "AIMS Lab, United International University (UIU), Bangladesh",
       period: "Jan 2026 - Present",
       description:
         "Working on research and development of machine learning models for various applications, including natural language processing and computer vision.",
@@ -182,7 +183,7 @@ window.PORTFOLIO_DATA = {
  
     {
       role: "Research Assistant",
-      org: "AI Lab, United International University (UIU), Bangladesh",
+      org: "AIMS Lab, United International University (UIU), Bangladesh",
       period: "Sep 2024 - Dec 2025",
       description:
         "Assisted in research projects related to machine learning and artificial intelligence, contributing to data collection, model training, and evaluation.",
@@ -213,7 +214,7 @@ window.PORTFOLIO_DATA = {
       description:
         "An interactive logistic regression classifier that estimates cardiac risk from patient data, paired with a simple web interface for entering values and viewing the prediction.",
       image: "assets/heart.jpg",
-      stack: ["Python", "Logistic Regression", "HTML", "CSS", "JavaScript"],
+      stack: ["Python", "Logistic Regression", "KNN"],
       github: "https://github.com/theTerminatorrr/Heart-Disease-Detection-",
       link: "https://theterminatorrr.github.io/Heart-Disease-Detection-/",
       category: "Machine Learning",
