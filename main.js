@@ -194,22 +194,26 @@
         </div>`;
       return;
     }
-
     wrap.innerHTML = data.projects
       .map(
         p => `
       <article class="project-card reveal">
-        ${p.image ? `<div class="project-card__media"><img src="${escapeAttr(p.image)}" alt="${escapeAttr(p.title)} preview" loading="lazy" /></div>` : ""}
-        <div class="project-card__body">
-          <h3>${escapeHTML(p.title)}</h3>
-          <p>${escapeHTML(p.description)}</p>
-          ${Array.isArray(p.stack)
-            ? `<div class="project-card__stack">${p.stack.map(s => `<span>${escapeHTML(s)}</span>`).join("")}</div>`
-            : ""
-          }
-          <div class="project-card__links">
-            ${p.github ? `<a href="${escapeAttr(p.github)}" target="_blank" rel="noopener">Code on GitHub ↗</a>` : ""}
-            ${p.link ? `<a href="${escapeAttr(p.link)}" target="_blank" rel="noopener">Live Server ↗</a>` : ""}
+        <div class="project-card__media"${!p.image ? ' style="background: linear-gradient(150deg, var(--navy-700), var(--navy-900));"' : ""}>
+          ${p.image ? `<img src="${escapeAttr(p.image)}" alt="${escapeAttr(p.title)} preview" loading="lazy" />` : ""}
+          <div class="project-card__scrim"></div>
+          <div class="project-card__overlay">
+            <div class="project-card__text">
+              <h3>${escapeHTML(p.title)}</h3>
+              <p>${escapeHTML(p.description)}</p>
+            </div>
+            <a class="project-card__arrow"
+               href="${escapeAttr(p.link || p.github || "#")}"
+               ${(p.link || p.github) ? 'target="_blank" rel="noopener"' : ""}
+               aria-label="Open ${escapeAttr(p.title)}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
           </div>
         </div>
       </article>`
@@ -218,8 +222,8 @@
   }
 
   /* ----------------------------------------------------------------
-     RENDER — RESEARCH
-  ---------------------------------------------------------------- */
+ RENDER — RESEARCH
+---------------------------------------------------------------- */
   function renderResearch() {
     const interestsWrap = document.getElementById("researchInterests");
     if (interestsWrap && Array.isArray(data.researchInterests)) {
@@ -490,9 +494,9 @@
     });
   }
 
-    /* ----------------------------------------------------------------
-     CUSTOM CURSOR (all devices, including touch)
-  ---------------------------------------------------------------- */
+  /* ----------------------------------------------------------------
+   CUSTOM CURSOR (all devices, including touch)
+---------------------------------------------------------------- */
   function initCursor() {
     if (reduceMotion) return;
     const dot = document.createElement("div");
