@@ -201,6 +201,10 @@
         <div class="project-card__media"${!p.image ? ' style="background: linear-gradient(150deg, var(--navy-700), var(--navy-900));"' : ""}>
           ${p.image ? `<img src="${escapeAttr(p.image)}" alt="${escapeAttr(p.title)} preview" loading="lazy" />` : ""}
           <div class="project-card__scrim"></div>
+          ${Array.isArray(p.stack) && p.stack.length ? `
+          <div class="project-card__stack">
+            ${p.stack.map(s => `<span>${escapeHTML(s)}</span>`).join("")}
+          </div>` : ""}
           <div class="project-card__overlay">
             <div class="project-card__text">
               <h3>${escapeHTML(p.title)}</h3>

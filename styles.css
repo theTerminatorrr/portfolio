@@ -1076,6 +1076,29 @@ button {
   height: 18px;
 }
 
+.project-card__stack {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card__stack span {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .project-card:hover .project-card__arrow {
   background: var(--accent);
   transform: rotate(45deg);
