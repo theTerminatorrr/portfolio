@@ -818,7 +818,7 @@ button {
 ================================================================== */
 .skills__groups {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -1383,6 +1383,10 @@ button {
     overflow: visible;
   }
 
+  .skills__groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .nav__menu {
     position: fixed;
     inset: 74px 16px auto 16px;
@@ -1448,6 +1452,11 @@ button {
 }
 
 @media (max-width: 480px) {
+
+    .skills__groups {
+    grid-template-columns: 1fr;
+  }
+  
   .hero__cta {
     flex-direction: column;
     width: 100%;
