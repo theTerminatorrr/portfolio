@@ -198,6 +198,18 @@ window.PORTFOLIO_DATA = {
      { title, description, image, stack: [], github, link, category, featured } */
   projects: [
     {
+      title: "GramBandhan",
+      description:
+        "GramBandhan is a web application designed to facilitate communication and collaboration within rural communities, providing a platform for sharing information and coordinating activities.",
+      image: "assets/grambandhan.jpg",
+      stack: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/theTerminatorrr/GramBandhan",
+      link: "https://theterminatorrr.github.io/GramBandhan/",
+      category: "Web Development",
+      featured: true
+    },
+
+    {
       title: "ProjectPulse",
       description:
         "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback that never gets lost in a group chat.",
