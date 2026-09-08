@@ -212,7 +212,7 @@ window.PORTFOLIO_DATA = {
     {
       title: "ProjectPulse",
       description:
-        "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback that never gets lost in a group chat.",
+        "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback.",
       image: "assets/projectpulse.jpg",
       stack: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/theTerminatorrr/ProjectPulse",
