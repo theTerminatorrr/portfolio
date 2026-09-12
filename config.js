@@ -196,6 +196,7 @@ window.PORTFOLIO_DATA = {
   /* ---------------- PROJECTS ----------------
      Empty on purpose. Each item:
      { title, description, image, stack: [], github, link, category, featured } */
+      
   projects: [
     {
       title: "GramBandhan",
