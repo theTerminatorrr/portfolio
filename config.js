@@ -145,6 +145,7 @@ window.PORTFOLIO_DATA = {
       items: [
         { name: "Git", icon: "devicon-git-plain colored" },
         { name: "Figma", icon: "devicon-figma-plain colored" },
+        { name: "Jira", icon: "devicon-jira-plain colored" },
         { name: "VS Code", icon: "devicon-vscode-plain colored" },
         { name: "Jupyter", icon: "devicon-jupyter-plain colored" },
         { name: "PyCharm", icon: "devicon-pycharm-plain colored" },
@@ -196,7 +197,7 @@ window.PORTFOLIO_DATA = {
   /* ---------------- PROJECTS ----------------
      Empty on purpose. Each item:
      { title, description, image, stack: [], github, link, category, featured } */
-      
+
   projects: [
     {
       title: "GramBandhan",
