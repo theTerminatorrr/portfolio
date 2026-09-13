@@ -12,7 +12,7 @@ window.PORTFOLIO_DATA = {
   tagline:
     "Undergraduate CSE student, Passionate about building a foundation across Machine Learning, Computer Vision, Natural Language Processing, Digital Image processing and Multimodal Systems. — building intelligent solutions that create meaningful impact.",
 
-  avatar: "assets/Jony.jpg",
+  avatar: "assets/Jahidul Islam Jony.png",
 
   resume: "assets/Jahidul_Islam_Jony_Resume.docx",
 
