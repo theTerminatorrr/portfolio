@@ -55,8 +55,8 @@ window.PORTFOLIO_DATA = {
       group: "Core Expertise",
       items: [
         { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
-        { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" } ,
-        { name: "Computational Theory", icon: "emoji", emoji: "📐" } ,
+        { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" },
+        { name: "Computational Theory", icon: "emoji", emoji: "📐" },
         { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
       ]
     },
@@ -83,8 +83,8 @@ window.PORTFOLIO_DATA = {
         { name: "Software Engineering", icon: "emoji", emoji: "🛠️" },
       ]
     },
-    
-      {
+
+    {
       group: "Currently Exploring",
       items: [
         { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
@@ -106,8 +106,9 @@ window.PORTFOLIO_DATA = {
         { name: "Python", icon: "devicon-python-plain colored" },
         { name: "C++", icon: "devicon-cplusplus-plain colored" },
         { name: "Java", icon: "devicon-java-plain colored" },
-        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
         { name: "C", icon: "devicon-c-plain colored" },
+        { name: "PHP", icon: "devicon-php-plain colored" },
+        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
         { name: "HTML", icon: "devicon-html5-plain colored" },
         { name: "CSS", icon: "devicon-css3-plain colored" },
         { name: "SQL", icon: "devicon-mysql-plain colored" },
