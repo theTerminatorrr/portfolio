@@ -206,8 +206,8 @@ window.PORTFOLIO_DATA = {
         "GramBandhan is a web application designed to facilitate communication and collaboration within rural communities, providing a platform for sharing information and coordinating activities.",
       image: "assets/grambandhan.jpg",
       stack: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/theTerminatorrr/GramBandhan",
-      link: "https://theterminatorrr.github.io/GramBandhan/",
+      github: "https://github.com/theTerminatorrr/GramBondhon",
+      link: "https://theterminatorrr.github.io/GramBondhon/",
       category: "Web Development",
       featured: true
     },
