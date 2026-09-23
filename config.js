@@ -1,8 +1,3 @@
-/**
- * ============================================================
- *  PORTFOLIO DATA — the ONLY file you should need to touch
- *  to update content. No component code needs to change.
- * =========================================================== */
 
 window.PORTFOLIO_DATA = {
   /* ---------------- IDENTITY ---------------- */
