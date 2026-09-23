@@ -40,10 +40,7 @@ window.PORTFOLIO_DATA = {
   ],
 
 
-  /* ---------------- EXPERTISE ----------------
-     A separate, focused section — the handful of things you'd
-     confidently call yourself expert in, shown as its own group
-     of tags, same visual style as the Skills section above. */
+  /* ---------------- EXPERTISE ---------------- */
 
   expertise: [
     {
@@ -163,9 +160,7 @@ window.PORTFOLIO_DATA = {
 
   ],
 
-  /* ---------------- EXPERIENCE ----------------
-     Empty on purpose — add entries as they happen. Each item:
-     { role, org, period, description, current } */
+  /* ---------------- EXPERIENCE ---------------- */
 
   experience: [
     /*
@@ -190,9 +185,7 @@ window.PORTFOLIO_DATA = {
 
   ],
 
-  /* ---------------- PROJECTS ----------------
-     Empty on purpose. Each item:
-     { title, description, image, stack: [], github, link, category, featured } */
+  /* ---------------- PROJECTS ---------------- */
 
   projects: [
     {
@@ -233,9 +226,7 @@ window.PORTFOLIO_DATA = {
   ],
 
 
-  /* ---------------- RESEARCH ----------------
-     Research interests are real; publications are intentionally
-     empty until there are real ones to list. */
+  /* ---------------- RESEARCH ---------------- */
   researchInterests: [
     { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
     { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
