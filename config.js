@@ -23,7 +23,7 @@ window.PORTFOLIO_DATA = {
     x: "https://x.com/terminatorr_t60",
     github: "https://github.com/theTerminatorrr",
     whatsapp: "https://wa.me/8801308755671",
-    scholar: "",
+    scholar: "https://scholar.google.com/citations?user=4R-p0F0AAAAJ&hl=en",
     orcid: ""
   },
 
