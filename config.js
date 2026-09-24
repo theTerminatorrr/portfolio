@@ -18,12 +18,12 @@ window.PORTFOLIO_DATA = {
   socials: {
     email: "jahiduljony60@gmail.com",
     linkedin: "https://www.linkedin.com/in/terminator-t60/",
+    scholar: "https://scholar.google.com/citations?user=4R-p0F0AAAAJ&hl=en",
     instagram: "https://www.instagram.com/__.the_terminator.__",
     facebook: "https://www.facebook.com/Jony.terminator",
     x: "https://x.com/terminatorr_t60",
     github: "https://github.com/theTerminatorrr",
     whatsapp: "https://wa.me/8801308755671",
-    scholar: "https://scholar.google.com/citations?user=4R-p0F0AAAAJ&hl=en",
     orcid: ""
   },
 
