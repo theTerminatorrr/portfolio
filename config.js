@@ -189,10 +189,10 @@ window.PORTFOLIO_DATA = {
 
   projects: [
     {
-      title: "GramBandhan",
+      title: "Grambondhon",
       description:
-        "GramBandhan is a web application designed to facilitate communication and collaboration within rural communities, providing a platform for sharing information and coordinating activities.",
-      image: "assets/grambandhan.jpg",
+        "Grambondhon is a web application designed to facilitate communication and collaboration within rural communities, providing a platform for sharing information and coordinating activities.",
+      image: "assets/grambondhon.jpg",
       stack: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/theTerminatorrr/GramBondhon",
       link: "https://theterminatorrr.github.io/GramBondhon/",
