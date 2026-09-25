@@ -189,7 +189,7 @@ window.PORTFOLIO_DATA = {
 
   projects: [
     {
-      title: "GramBandhan",
+      title: "Grambondhon",
       description:
         "GramBandhan is a web application designed to facilitate communication and collaboration within rural communities, providing a platform for sharing information and coordinating activities.",
       image: "assets/grambandhan.jpg",
