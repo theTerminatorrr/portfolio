@@ -205,7 +205,7 @@ window.PORTFOLIO_DATA = {
       description:
         "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback.",
       image: "assets/projectpulse.jpg",
-      stack: ["HTML", "CSS", "JavaScript"],
+      stack: ["HTML", "CSS", "JavaScript", "TypeScript"],
       github: "https://github.com/theTerminatorrr/ProjectPulse",
       link: "https://theterminatorrr.github.io/ProjectPulse/",
       category: "Web Development",
