@@ -193,7 +193,7 @@ window.PORTFOLIO_DATA = {
       description:
         "Grambondhon is a web application designed to facilitate communication and collaboration within rural communities, providing a platform for sharing information and coordinating activities.",
       image: "assets/grambondhon.jpg",
-      stack: ["HTML", "CSS", "JavaScript"],
+      stack: ["HTML", "CSS", "JavaScript", "TypeScript"],
       github: "https://github.com/theTerminatorrr/GramBondhon",
       link: "https://theterminatorrr.github.io/GramBondhon/",
       category: "Web Development",
