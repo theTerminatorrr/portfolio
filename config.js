@@ -2,10 +2,10 @@
 window.PORTFOLIO_DATA = {
   /* ---------------- IDENTITY ---------------- */
   name: "Jahidul Islam Jony",
-  role: "CS Undergrad || ML & AI Enthusiast",
-  focus: "Machine Learning · Natural Language Processing · Computer Vision",
+  role: "CS Undergrad || Machine Learning Researcher",
+  focus: "Deep Learning · Natural Language Processing · Large Language Model",
   tagline:
-    "Undergraduate CSE student, Passionate about building a foundation across Machine Learning, Computer Vision, Natural Language Processing, Digital Image processing and Multimodal Systems. — building intelligent solutions that create meaningful impact.",
+    "Undergraduate CSE student, Passionate about building a foundation across Deep Learning, Computer Vision, Natural Language Processing, Digital Image processing and Multimodal Systems. — building intelligent solutions that create meaningful impact.",
 
   avatar: "assets/Jahidul Islam Jony.png",
 
