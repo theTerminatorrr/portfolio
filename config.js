@@ -47,9 +47,9 @@ window.PORTFOLIO_DATA = {
       group: "Core Expertise",
       items: [
         { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
+        { name: "Large Language Models", icon: "emoji", emoji: "💬" },
         { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" },
         { name: "Computational Theory", icon: "emoji", emoji: "📐" },
-        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
       ]
     },
 
