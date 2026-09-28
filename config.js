@@ -166,7 +166,7 @@ window.PORTFOLIO_DATA = {
     /*
     {
       role: "Machine Learning Researcher",
-      org: "AIMS Lab, United International University (UIU), Bangladesh",
+      org: "Advanced Intelligence Multidisciplinary Systems (AIMS) Lab, United International University (UIU), Bangladesh",
       period: "Jan 2026 - Present",
       description:
         "Working on research and development of machine learning models for various applications, including natural language processing and computer vision.",
@@ -175,7 +175,7 @@ window.PORTFOLIO_DATA = {
  
     {
       role: "Research Assistant",
-      org: "AIMS Lab, United International University (UIU), Bangladesh",
+      org: "Advanced Intelligence Multidisciplinary Systems (AIMS) Lab, United International University (UIU), Bangladesh",
       period: "Sep 2024 - Dec 2025",
       description:
         "Assisted in research projects related to machine learning and artificial intelligence, contributing to data collection, model training, and evaluation.",
