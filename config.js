@@ -195,7 +195,7 @@ window.PORTFOLIO_DATA = {
       image: "assets/grambondhon.jpg",
       stack: ["HTML", "CSS", "JavaScript", "TypeScript"],
       github: "https://github.com/theTerminatorrr/GramBondhon",
-      link: "https://theterminatorrr.github.io/GramBondhon/",
+      link: "https://grambondhon.vercel.app/",
       category: "Web Development",
       featured: true
     },
