@@ -1502,12 +1502,18 @@ button {
   width: min(640px, 100%);
   max-height: 88vh;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-radius: var(--radius);
   background: var(--navy-900);
   border: 1px solid var(--glass-border-strong);
   box-shadow: var(--shadow);
   transform: translateY(16px) scale(0.98);
   transition: transform 0.3s var(--ease);
+}
+
+.project-modal__panel::-webkit-scrollbar {
+  display: none;
 }
 
 .project-modal.is-open .project-modal__panel {
