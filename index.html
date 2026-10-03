@@ -273,6 +273,28 @@
     <p class="footer__copy">© <span id="year"></span> Jahidul Islam Jony. All rights reserved.</p>
   </footer>
 
+  <!-- ============ PROJECT MODAL ============ -->
+  <div id="projectModal" class="project-modal" aria-hidden="true">
+    <div class="project-modal__backdrop" data-modal-close></div>
+    <div class="project-modal__panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button type="button" class="project-modal__close" data-modal-close
+        aria-label="Close project details">&times;</button>
+      <div class="project-modal__media">
+        <img id="projectModalImage" src="" alt="" />
+      </div>
+      <div class="project-modal__body">
+        <p id="projectModalCategory" class="project-modal__eyebrow"></p>
+        <h3 id="projectModalTitle" class="project-modal__title"></h3>
+        <p id="projectModalDescription" class="project-modal__description"></p>
+        <div id="projectModalStats" class="project-modal__stats"></div>
+        <div class="project-modal__actions">
+          <a id="projectModalCta" class="btn btn--primary" href="#" target="_blank" rel="noopener">View Project ↗</a>
+          <a id="projectModalGithub" class="btn btn--ghost" href="#" target="_blank" rel="noopener">Source on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="config.js"></script>
   <script src="main.js"></script>
 </body>

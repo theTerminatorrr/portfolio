@@ -34,7 +34,7 @@
     email: `<svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1.4 2L12 12.5 20.6 6H3.4zM3 8.2V18h18V8.2l-8.4 6.6a1 1 0 0 1-1.2 0L3 8.2z"/></svg>`,
     whatsapp: `<svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5C11 9 10.5 7.8 10.3 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1.1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.3-.6-.5zM12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 1.7.5 3.4 1.3 4.9L2 21.8l5-1.3c1.4.8 3 1.2 4.6 1.2h.1c5.4 0 9.8-4.4 9.8-9.8 0-2.6-1-5.1-2.9-6.9C16.7 3.2 14.2 2.2 12 2.2zm0 17.9h-.1c-1.4 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3c-.8-1.3-1.2-2.7-1.2-4.2 0-4.4 3.6-8 8-8 2.1 0 4.1.8 5.6 2.3 1.5 1.5 2.4 3.5 2.4 5.6-.1 4.5-3.6 8-8 8z"/></svg>`
   };
-  
+
 
   function renderSocialIcons(containerId, includeEmail) {
     const wrap = document.getElementById(containerId);
@@ -197,8 +197,8 @@
     }
     wrap.innerHTML = data.projects
       .map(
-        p => `
-      <article class="project-card reveal">
+        (p, i) => `
+      <article class="project-card reveal" data-project-index="${i}">
         <div class="project-card__media"${!p.image ? ' style="background: linear-gradient(150deg, var(--navy-700), var(--navy-900));"' : ""}>
           ${p.image ? `<img src="${escapeAttr(p.image)}" alt="${escapeAttr(p.title)} preview" loading="lazy" />` : ""}
           <div class="project-card__scrim"></div>
@@ -334,6 +334,78 @@
     setText("year", String(new Date().getFullYear()));
     renderSocialIcons("footerSocials", false);
   }
+
+
+    function initProjectModal() {
+    const modal = document.getElementById("projectModal");
+    const grid = document.getElementById("projectsGrid");
+    if (!modal || !grid) return;
+
+    const img = document.getElementById("projectModalImage");
+    const eyebrow = document.getElementById("projectModalCategory");
+    const title = document.getElementById("projectModalTitle");
+    const desc = document.getElementById("projectModalDescription");
+    const stats = document.getElementById("projectModalStats");
+    const cta = document.getElementById("projectModalCta");
+    const githubLink = document.getElementById("projectModalGithub");
+
+    function openModal(project) {
+      img.src = project.image || "";
+      img.alt = project.title ? `${project.title} preview` : "";
+      eyebrow.textContent = project.category || "Project";
+      title.textContent = project.title || "";
+      desc.textContent = project.description || "";
+
+      const entries = [
+        ["Impact", project.impact],
+        ["Timeline", project.timeline],
+        ["Role", project.role]
+      ].filter(([, v]) => !!v);
+
+      stats.innerHTML = entries
+        .map(([label, value]) => `
+          <div class="project-modal__stat">
+            <span class="project-modal__stat-label">${escapeHTML(label)}</span>
+            <span class="project-modal__stat-value">${escapeHTML(value)}</span>
+          </div>`)
+        .join("");
+      stats.style.display = entries.length ? "" : "none";
+
+      const primaryUrl = project.link || project.github || "";
+      cta.href = primaryUrl;
+      cta.style.display = primaryUrl ? "" : "none";
+
+      githubLink.href = project.github || "";
+      githubLink.style.display = project.github ? "" : "none";
+
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("no-scroll");
+    }
+
+    function closeModal() {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("no-scroll");
+    }
+
+    grid.addEventListener("click", e => {
+      if (e.target.closest("a")) return; // let GitHub/arrow links behave normally
+      const card = e.target.closest("[data-project-index]");
+      if (!card) return;
+      const project = data.projects[Number(card.dataset.projectIndex)];
+      if (project) openModal(project);
+    });
+
+    modal.querySelectorAll("[data-modal-close]").forEach(el =>
+      el.addEventListener("click", closeModal)
+    );
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+    });
+  }
+
 
   /* ----------------------------------------------------------------
      CONTACT FORM — validation, honeypot, submission
@@ -698,6 +770,7 @@
     initCursor();
     initCanvas();
     initContactForm();
+    initProjectModal();
     initEntrance();
   });
 })();
