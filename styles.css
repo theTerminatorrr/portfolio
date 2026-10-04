@@ -1454,10 +1454,10 @@ button {
 
 @media (max-width: 480px) {
 
-    .skills__groups {
+  .skills__groups {
     grid-template-columns: 1fr;
   }
-  
+
   .hero__cta {
     flex-direction: column;
     width: 100%;
@@ -1505,7 +1505,7 @@ button {
   scrollbar-width: none;
   -ms-overflow-style: none;
   border-radius: var(--radius);
-  background: var(--navy-900);
+  background: var(--bg);
   border: 1px solid var(--glass-border-strong);
   box-shadow: var(--shadow);
   transform: translateY(16px) scale(0.98);
@@ -1529,7 +1529,7 @@ button {
   height: 36px;
   border-radius: 50%;
   border: 1px solid var(--glass-border);
-  background: rgba(5, 8, 16, 0.6);
+  background: var(--glass-bg-strong);
   color: var(--text);
   font-size: 1.3rem;
   line-height: 1;
@@ -1613,5 +1613,3 @@ button {
     grid-template-columns: 1fr;
   }
 }
-
-
