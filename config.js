@@ -46,7 +46,7 @@ window.PORTFOLIO_DATA = {
     {
       group: "Core Expertise",
       items: [
-        { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
+        { name: "Deep Learning", icon: "emoji", emoji: "🤖" },
         { name: "Large Language Models", icon: "emoji", emoji: "💬" },
         { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" },
         { name: "Computational Theory", icon: "emoji", emoji: "📐" },
@@ -59,7 +59,7 @@ window.PORTFOLIO_DATA = {
         { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
         { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
         { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
-        { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
+        { name: "Agentic AI", icon: "emoji", emoji: "🤖" },
         { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
       ]
     },
