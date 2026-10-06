@@ -233,20 +233,17 @@ window.PORTFOLIO_DATA = {
 
   /* ---------------- RESEARCH ---------------- */
   researchInterests: [
-    { name: "Machine Learning", icon: "emoji", emoji: "🤖" },
     { name: "Deep Learning", icon: "emoji", emoji: "🧠" },
     { name: "Large Language Models", icon: "emoji", emoji: "💬" },
     { name: "Responsible AI", icon: "emoji", emoji: "⚖️" },
-    { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
     { name: "Multimodal Machine Learning", icon: "emoji", emoji: "🔗" },
   ],
+
   publications: [
     {
       title: "Ethical Implications of AI in Decision-Making",
       link: "https://drive.google.com/file/d/1ZpNwISD_KSTRXVmIWIkhXc6XDJi8sUvp/view?usp=sharing"
     }
-
-
   ],
 
 
