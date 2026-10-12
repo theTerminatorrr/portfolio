@@ -273,5 +273,8 @@ window.PORTFOLIO_DATA = {
 
   /* ---------------- ACHIEVEMENTS ----------------
      Empty on purpose — awards, hackathons, certificates go here. */
-  achievements: []
+  achievements: 
+  [
+    
+  ]
 };
