@@ -217,16 +217,16 @@ window.PORTFOLIO_DATA = {
       category: "Web Development",
       featured: true
     },
-    
+
     {
-      title: "ProjectPulse",
+      title: "Student Marks Predictor",
       description:
-        "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback.",
-      image: "assets/projectpulse.jpg",
-      stack: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/theTerminatorrr/ProjectPulse",
-      link: "https://theterminatorrr.github.io/ProjectPulse/",
-      category: "Web Development",
+        "A Machine Learning model that predicts student marks based on various factors, providing insights for educators and students.",
+      image: "assets/mark.jpg",
+      stack: ["Python ", "Random Forest"],
+      github: "https://github.com/theTerminatorrr/Student-Marks-Predictor",
+      link: "https://markpredict.vercel.app/",
+      category: "Machine Learning",
       featured: true
     },
 
