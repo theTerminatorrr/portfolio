@@ -217,6 +217,18 @@ window.PORTFOLIO_DATA = {
       category: "Web Development",
       featured: true
     },
+    
+    {
+      title: "ProjectPulse",
+      description:
+        "ProjectPulse gives Team Leaders a place to break work into tasks, gives Members a clear list of what's due, and gives Teachers a live view of every team's progress — with feedback.",
+      image: "assets/projectpulse.jpg",
+      stack: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/theTerminatorrr/ProjectPulse",
+      link: "https://theterminatorrr.github.io/ProjectPulse/",
+      category: "Web Development",
+      featured: true
+    },
 
     {
       title: "Heart Disease Detection",
