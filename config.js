@@ -68,7 +68,7 @@ window.PORTFOLIO_DATA = {
     {
       group: "Computational Foundations",
       items: [
-        { name: "Theory of Computation", icon: "emoji", emoji: "📐" },
+        { name: "Computational Theory", icon: "emoji", emoji: "📐" },
         { name: "Data Structures & Algorithms", icon: "emoji", emoji: "🗂️" },
         { name: "Operating Systems", icon: "emoji", emoji: "💻" },
         { name: "Computer Networks", icon: "emoji", emoji: "🌐" },
