@@ -61,7 +61,6 @@ window.PORTFOLIO_DATA = {
         { name: "Digital Image Processing", icon: "emoji", emoji: "🖼️" },
         { name: "Large Language Models", icon: "emoji", emoji: "💬" },
         { name: "Agentic AI", icon: "emoji", emoji: "🤖" },
-        { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
       ]
     },
 
@@ -80,8 +79,9 @@ window.PORTFOLIO_DATA = {
     {
       group: "Currently Exploring",
       items: [
-        { name: "Responsible AI", icon: "emoji", emoji: "⚖️" }, 
+        { name: "Responsible AI", icon: "emoji", emoji: "⚖️" },
         { name: "Natural Language Processing", icon: "emoji", emoji: "💬" },
+        { name: "Cloud Computing", icon: "emoji", emoji: "☁️" },
         { name: "Reinforcement Learning", icon: "emoji", emoji: "🎮" },
         { name: "Computer Vision", icon: "emoji", emoji: "🔎" },
         { name: "Generative AI", icon: "emoji", emoji: "🎨" },
@@ -274,8 +274,8 @@ window.PORTFOLIO_DATA = {
 
   /* ---------------- ACHIEVEMENTS ----------------
      Empty on purpose — awards, hackathons, certificates go here. */
-  achievements: 
-  [
+  achievements:
+    [
 
-  ]
+    ]
 };
