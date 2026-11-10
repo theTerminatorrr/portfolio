@@ -236,8 +236,8 @@ window.PORTFOLIO_DATA = {
         "An interactive logistic regression classifier that estimates cardiac risk from patient data, paired with a simple web interface for entering values and viewing the prediction.",
       image: "assets/heart.jpg",
       stack: ["Python", "Logistic Regression", "KNN"],
-      github: "https://github.com/theTerminatorrr/Heart-Disease-Detection-",
-      link: "https://theterminatorrr.github.io/Heart-Disease-Detection-/",
+      github: "https://github.com/theTerminatorrr/Heart-Disease-Detection",
+      link: "https://theterminatorrr.github.io/Heart-Disease-Detection/",
       category: "Machine Learning",
       featured: true
     },
