@@ -56,6 +56,27 @@
   }
 
   /* ----------------------------------------------------------------
+     HERO — TYPING LINE (cycles the phrases in data.focus, split on "·")
+  ---------------------------------------------------------------- */
+  function initHeroTyping() {
+    const el = document.getElementById("heroTyped");
+    if (!el) return;
+    const phrases = String(data.focus || "").split("·").map(p => p.trim()).filter(Boolean);
+    if (!phrases.length) return;
+    if (reduceMotion) { el.textContent = phrases[0]; return; }
+    let i = 0, j = 0, deleting = false;
+    (function tick() {
+      const word = phrases[i];
+      j += deleting ? -1 : 1;
+      el.textContent = word.slice(0, j);
+      let delay = deleting ? 35 : 80;
+      if (!deleting && j === word.length) { deleting = true; delay = 1500; }
+      else if (deleting && j === 0) { deleting = false; i = (i + 1) % phrases.length; delay = 300; }
+      setTimeout(tick, delay);
+    })();
+  }
+
+  /* ----------------------------------------------------------------
      RENDER — HERO
   ---------------------------------------------------------------- */
   function renderHero() {
@@ -64,6 +85,18 @@
     setText("heroFocus", data.focus);
     setText("heroTagline", data.tagline);
     renderSocialIcons("heroSocials", false);
+
+    const heroPhoto = document.getElementById("heroPhoto");
+    if (heroPhoto) {
+      if (data.avatar) {
+        heroPhoto.src = data.avatar;
+        heroPhoto.alt = `Portrait of ${data.name || "the site owner"}`;
+        heroPhoto.onerror = () => { heroPhoto.style.display = "none"; };
+      } else {
+        heroPhoto.style.display = "none";
+      }
+    }
+    initHeroTyping();
 
     const githubBtn = document.getElementById("heroGithubBtn");
     if (githubBtn) {
@@ -336,7 +369,7 @@
   }
 
 
-    function initProjectModal() {
+  function initProjectModal() {
     const modal = document.getElementById("projectModal");
     const grid = document.getElementById("projectsGrid");
     if (!modal || !grid) return;

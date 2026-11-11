@@ -3,7 +3,7 @@ window.PORTFOLIO_DATA = {
   /* ---------------- IDENTITY ---------------- */
   name: "Jahidul Islam Jony",
   role: "CS Undergrad || Machine Learning Researcher",
-  focus: "Deep Learning · Natural Language Processing · Large Language Model",
+  focus: "Machine Learning · Deep Learning · Digital Image Processing · Natural Language Processing · Reinforcement Learning · Large Language Models · Agentic AI and Multimodal Systems",
   tagline:
     "Undergraduate CSE student, Passionate about building a foundation across Deep Learning, Computer Vision, Natural Language Processing, Digital Image processing and Multimodal Systems. — building intelligent solutions that create meaningful impact.",
 
@@ -34,6 +34,7 @@ window.PORTFOLIO_DATA = {
   about: [
     "I'm an undergraduate Computer Science and Engineering student at United International University (UIU), Bangladesh, working toward a future in research and technology.",
     "I'm drawn to problems at the edge of perception and language — computer vision, NLP, and multimodal machine learning — and I like understanding systems from first principles before I build with them.",
+
     "Right now I'm deepening my foundations in Python, C, C++, and Java while exploring machine learning, deep learning, digital image processing, and cloud computing through hands-on projects.",
     "Long term, I want to contribute to science and technology through research and innovation — work that outlives the demo and actually moves a field forward.",
     "I learn best in the open: reading papers, breaking code on purpose, and building things with people who know more than I do."

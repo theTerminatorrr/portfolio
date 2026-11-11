@@ -476,34 +476,31 @@ button {
   position: relative;
   z-index: 1;
   min-height: 92vh;
-  display: flex;
+  width: 100%;
+  max-width: var(--content-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
   align-items: center;
-  justify-content: center;
-  padding: 50px 25px 60px;
+  gap: 48px;
+  padding: 40px 25px 80px;
+  font-family: "Poppins", var(--font-body);
   --mx: 50%;
   --my: 35%;
+  --name-a: var(--cyan-300);
+  --name-b: var(--cyan-400);
 }
 
-
-/*
-.hero__glow {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(500px circle at var(--mx) var(--my), rgba(111, 177, 224, 0.12), transparent 60%),
-    radial-gradient(900px circle at 15% 20%, rgba(201, 169, 97, 0.06), transparent 60%),
-    radial-gradient(900px circle at 85% 80%, rgba(111, 177, 224, 0.08), transparent 60%);
+:root[data-theme="light"] .hero {
+  --name-a: #1f78b8;
+  --name-b: #1a8fd1;
 }
-*/
-
 
 .hero__inner {
-  max-width: 760px;
-  text-align: center;
+  min-width: 0;
 }
 
+/* shared by the other sections (About, Skills, Projects...) - keep as is */
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -528,26 +525,127 @@ button {
   filter: drop-shadow(0 2px 24px rgba(111, 177, 224, 0.25));
 }
 
-.hero__focus {
-  margin-top: 14px;
-  font-size: clamp(1rem, 2.2vw, 1.3rem);
-  color: var(--text-muted);
-  font-weight: 500;
+.hero__role {
+  margin-bottom: 10px;
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.hero__typed {
+  min-height: 1.8em;
+  margin-bottom: 20px;
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
+  color: var(--accent);
+}
+
+.hero__caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  background: var(--accent);
+  animation: heroBlink 1s steps(1) infinite;
+}
+
+@keyframes heroBlink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero__tagline {
-  margin: 20px auto 0;
-  max-width: 560px;
-  color: var(--text-faint);
-  font-size: 1rem;
+  max-width: 60ch;
+  margin: 0 0 32px;
+  font-size: clamp(0.98rem, 1.4vw, 1.15rem);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text-muted);
 }
 
 .hero__cta {
-  margin-top: 34px;
   display: flex;
-  gap: 14px;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-start;
+}
+
+.hero__cta .btn {
+  padding: 15px 30px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.hero .socials {
+  justify-content: flex-start;
+}
+
+/* photo: circular, with a slowly turning cyan-and-gold ring */
+.hero__photo {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__avatar {
+  position: relative;
+  aspect-ratio: 1;
+  width: min(100%, 500px);
+  aspect-ratio: 1;
+  border-radius: 25px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.hero__avatar::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(from 0deg, var(--accent), transparent 30%, var(--accent-2) 55%, transparent 75%, var(--accent));
+  animation: spin 15s linear infinite;
+}
+
+.hero__avatar::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 23px;
+  background: var(--bg);
+}
+
+.hero__avatar img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 30px 20px 80px;
+  }
+
+  .hero__photo {
+    order: -1;
+  }
+
+  .hero__avatar {
+    width: min(80vw, 400px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero__avatar::before,
+  .hero__caret {
+    animation: none;
+  }
 }
 
 .scroll-cue {
@@ -811,6 +909,45 @@ button {
 
 .about__text p {
   color: var(--text-muted);
+}
+
+
+/* ==================================================================
+   ABOUT CARD
+================================================================== */
+.about-section {
+  scroll-margin-top: 70px;
+}
+
+.about-card {
+  padding: 36px 40px;
+}
+
+.about-card__text {
+  column-count: 2;
+  column-gap: 90px;
+  column-rule: 3px solid var(--glass-border);
+}
+
+.about-card__text p {
+  margin: 0 0 16px;
+  break-inside: avoid;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.about-card__text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .about-card {
+    padding: 26px 22px;
+  }
+
+  .about-card__text {
+    column-count: 1;
+  }
 }
 
 /* ==================================================================
