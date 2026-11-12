@@ -527,8 +527,8 @@ button {
 
 .hero__role {
   margin-bottom: 10px;
-  font-size: clamp(1.05rem, 2vw, 1.5rem);
-  font-weight: 600;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 350;
   color: var(--text);
 }
 
