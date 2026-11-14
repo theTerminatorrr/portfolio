@@ -800,7 +800,7 @@
     initNav();
     initReveal();
     initHeroLight();
-    initCursor();
+    //initCursor();
     initCanvas();
     initContactForm();
     initProjectModal();
