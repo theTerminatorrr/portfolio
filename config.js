@@ -5,7 +5,7 @@ window.PORTFOLIO_DATA = {
   role: "CS Undergrad || Machine Learning Researcher",
   focus: "Machine Learning · Deep Learning · Digital Image Processing · Natural Language Processing · Reinforcement Learning · Large Language Models · Agentic AI and Multimodal Systems",
   tagline:
-    "Undergraduate CSE student, Passionate about building a foundation across Deep Learning, Computer Vision, Natural Language Processing, Digital Image processing and Multimodal Systems. — building intelligent solutions that create meaningful impact.",
+    "Undergraduate CSE student, Passionate about building a foundation across Deep Learning, NLP, LLM and Multimodal Systems. — building intelligent solutions that create meaningful impact.",
 
   avatar: "assets/Jahidul Islam Jony.png",
 
