@@ -32,12 +32,19 @@ window.PORTFOLIO_DATA = {
 
   /* ---------------- ABOUT ---------------- */
   about: [
-    "I'm an undergraduate Computer Science and Engineering student at United International University (UIU), Bangladesh, working toward a future in research and technology.",
-    "I'm drawn to problems at the edge of perception and language — computer vision, NLP, and multimodal machine learning — and I like understanding systems from first principles before I build with them.",
+    "I'm an undergraduate Computer Science and Engineering student at United International University (UIU), Bangladesh, with a growing focus on Machine Learning, Artificial Intelligence, and scientific research. I'm passionate about understanding how intelligent systems can help solve complex problems, both in technology and in fundamental science.",
 
-    "Right now I'm deepening my foundations in Python, C, C++, and Java while exploring machine learning, deep learning, digital image processing, and cloud computing through hands-on projects.",
-    "Long term, I want to contribute to science and technology through research and innovation — work that outlives the demo and actually moves a field forward.",
-    "I learn best in the open: reading papers, breaking code on purpose, and building things with people who know more than I do."
+    "My primary interests lie in Machine Learning, Deep Learning, Natural Language Processing, and Large Language Models. Beyond conventional applications, I'm particularly fascinated by Scientific Machine Learning — the intersection of artificial intelligence, physics, and data-driven scientific discovery.",
+
+    "Currently, I'm developing my research direction around Large Language Models and Agentic AI. I'm exploring Transformer-based architectures, Vision Transformers and other cutting-edge techniques.",
+
+    /*"Currently, I'm developing my research direction around Neutrino Physics and Machine Learning, with a particular interest in Supernova Neutrino Detection. I'm exploring Transformer-based architectures, Vision Transformers, and physics-informed learning approaches to investigate how modern AI can contribute to neutrino detection, signal analysis, and scientific discovery.",*/
+
+    "Alongside research, I'm strengthening my foundations in mathematics, algorithms, programming, and machine learning. I work primarily with Python and am continuously developing my understanding of the tools, architectures, and computational techniques used in modern AI research.",
+
+    "My long-term ambition is to pursue advanced research in Computer Science and contribute to meaningful scientific discoveries through Artificial Intelligence. I aspire to work on research that goes beyond conventional applications — developing ideas, methods, and systems that can make a genuine contribution to science and technology.",
+
+    "I believe in learning from first principles, questioning established approaches, reading research papers, experimenting with ideas, and building things through hands-on exploration. For me, research isn't just about applying existing methods; it's about understanding their limitations, discovering new possibilities, and contributing something meaningful to the scientific community."
   ],
 
 
