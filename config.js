@@ -208,7 +208,7 @@ window.PORTFOLIO_DATA = {
       github: "https://github.com/theTerminatorrr/GramBondhon",
       link: "https://grambondhon.vercel.app/",
       category: "Web Development",
-      impact: " ",
+      impact: "Empowering rural communities with a digital platform for communication and collaboration.",
       timeline: "3 Months",
       role: "Developer",
       featured: true
